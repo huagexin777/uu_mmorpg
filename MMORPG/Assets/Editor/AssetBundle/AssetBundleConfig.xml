@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <AssetBundle>
+    <Item Name="Role_Main_Player" Tag="Role" Version="1" Size="0" ToPath="/Role/">
+      <Path Value="Resources/Prefab/Role/Role_Main_Player.prefab"/>
+    </Item>
+    <Item Name="GameScene_CunZhuang" Tag="Scene" Version="1" Size="0" ToPath="/Scene/">
+      <Path Value="Scene/MainCity_copy.unity"/>
+    </Item>  
+  </AssetBundle>
+</Root>

@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2111055303
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: role_main_player.assetbundle
+      Dependencies: {}

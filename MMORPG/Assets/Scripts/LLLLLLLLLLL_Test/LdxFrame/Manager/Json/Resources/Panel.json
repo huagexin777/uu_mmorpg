@@ -1,0 +1,21 @@
+﻿{
+"PanelList":
+	[
+		{
+			"paneltype": "Login",
+			"pathstr":"UIPanel/LoginPanel"
+		},
+		{
+			"paneltype": "Register",
+			"pathstr":"UIPanel/RegisterPanel"
+		},
+		{
+			"paneltype": "Message",
+			"pathstr":"UIPanel/MessagePanel"
+		},
+		{
+			"paneltype": "Server",
+			"pathstr":"UIPanel/ServerPanel"
+		}
+	]
+}
