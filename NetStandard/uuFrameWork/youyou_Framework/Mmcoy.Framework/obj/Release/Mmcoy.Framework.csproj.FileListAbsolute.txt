@@ -1,0 +1,11 @@
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\Mmcoy.Framework.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\Mmcoy.Framework.pdb
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\HtmlSanitizationLibrary.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\log4net.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\Newtonsoft.Json.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\System.Web.Http.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\System.Net.Http.Formatting.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\zh-Hans\System.Web.Http.resources.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\bin\Release\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\obj\Release\Mmcoy.Framework.dll
+E:\M-Learning\trunk\Framework\Mmcoy.Framework\obj\Release\Mmcoy.Framework.pdb

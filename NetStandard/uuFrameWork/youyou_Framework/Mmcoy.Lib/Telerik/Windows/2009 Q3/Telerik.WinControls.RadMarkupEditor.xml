@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.WinControls.RadMarkupEditor</name>
+    </assembly>
+    <members>
+        <member name="F:Telerik.WinControls.UI.TextOrHtmlSelectorControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TextOrHtmlSelectorControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.TextOrHtmlSelectorControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.AddHyperlinkDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.AddHyperlinkDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.AddHyperlinkDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.EditorToolbar">
+            <summary>
+            The toolbar of the control
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.ToggleToolStripButton">
+            <summary>
+            Tooltip is one string or two strings separated with '|'
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.ColorCommand.ConvertToColor(System.String)">
+            <summary>
+            Convert the custom integer (B G R) format to a color object.
+            </summary>
+            <param name="clrs">the custom color as a string</param>
+            <returns>the color</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.NewLineCommand">
+            <summary>
+            Embed a break at the current selection.
+            </summary>   
+        </member>
+        <member name="P:Telerik.WinControls.UI.IHtmlBox.Value">
+            <summary>
+            Get/Set the contents of the document Body, in html.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.RadMarkupEditor.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadMarkupEditor.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadMarkupEditor.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadMarkUpEditorWithToolbarInterface.Value">
+            <summary>
+            Get/Set the contents of the document Body, in html.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.DesignView.SelectAll">
+            <summary>
+            Selects the whole text.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.DesignView.RawValue">
+            <summary>
+            HtmlValue without to apply the Filters (XHTML, etc.)
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadMarkupDialog.Value">
+            <summary>
+            Gets or sets the editor value. You can use this property to set a value in the editor before showing it and get the value of the editor after the dialog is closed. Use DialogResult property to determine whether the editor is closed by some of the Apply buttons or the Close button.    
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadMarkupDialog.DefaultFont">
+            <summary>
+            Gets or sets the default font used when the editor is started. No formatting tags will be added for it as it is considered default, although that font name and size can be explicitly set using the editor functionality.  
+            </summary>
+        </member>
+    </members>
+</doc>

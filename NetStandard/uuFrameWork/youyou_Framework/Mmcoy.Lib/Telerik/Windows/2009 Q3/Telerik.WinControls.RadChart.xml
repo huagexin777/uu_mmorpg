@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.WinControls.RadChart</name>
+    </assembly>
+    <members>
+        <member name="F:Telerik.WinControls.UI.Design.ChartDesigner.actionLists">
+            <summary>
+            Action List collection, for action tags menu creation 
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartDesigner.FindDataSource(System.String)">
+            <summary>
+            Finds DataSource object by name
+            </summary>
+            <param name="dataSourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartDesigner.GenerateNewBindingSourceName(System.Object,System.String)">
+            <summary>
+            Generates new BindingSource name for VS IDE component
+            </summary>
+            <param name="dataSource"></param>
+            <param name="dataMember"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartDesigner.GetUniqueSiteName(System.ComponentModel.Design.IDesignerHost,System.String)">
+            <summary>
+            Generates unique component's name
+            </summary>
+            <param name="host"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartDesigner.GetNewProjectDataSourceInstance(System.ComponentModel.Design.Data.DataSourceDescriptor)">
+            <summary>
+            Creates new project data source instance
+            </summary>
+            <param name="dsDescriptor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartDesigner.CreateNewBindingSource(System.ComponentModel.Design.Data.DataSourceDescriptor,System.String)">
+            <summary>
+            Creates new BindingSource
+            </summary>
+            <param name="dsDescriptor"></param>
+            <param name="dataMember"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartDesigner.AddNewDataSource">
+            <summary>
+            Invokes standard new project data source creation dialog
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.ChartDesigner.ActionLists">
+            <summary>
+            Gets Action List collection
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.RadChartDesignersActionList">
+            <summary>
+            This class describe action tags menu for chart control in design time.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.RadChartDesignersActionList.baseControl">
+            <summary>
+            Link to chart control.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadChartDesignersActionList.#ctor(Telerik.WinControls.UI.RadChart)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="bc">Chart control</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadChartDesignersActionList.GetPropertyByName(System.String)">
+            <summary>
+            Method returns property descriptor by property name.
+            </summary>
+            <param name="propName">Property name</param>
+            <returns>Property descriptor</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadChartDesignersActionList.GetPropertyByName(System.String,System.Object)">
+            <summary>
+            Method returns property descriptor by property name.
+            </summary>
+            <param name="propName">Property name</param>
+            <param name="obj">Type name</param>
+            <returns>Property descriptor</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadChartDesignersActionList.GetSortedActionItems">
+            <summary>
+            Create action tags menu items collection.
+            </summary>
+            <returns>Action tags menu items collection</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadChartDesignersActionList.GetChartWizardForm">
+            <summary>
+            Call chart wizard action tags item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.Width">
+            <summary>
+            Chart width
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.Height">
+            <summary>
+            Chart height
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.Title">
+            <summary>
+            Chart title
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.DefaultChartType">
+            <summary>
+            Chart image format action tags item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.TextQuality">
+            <summary>
+            Chart text quality action tags item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.Skin">
+            <summary>
+            Chart series color palette action tags item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.Series">
+            <summary>
+            Chart series action tags item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.SeriesOrientation">
+            <summary>
+            Chart series orientation action tags item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.RadChartDesignersActionList.DataSource">
+            <summary>
+            Chart data source picker action tags item.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ChartPaletteEditorFromAL.columnsListing_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Added to automatically close dropdown after user selection
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.SeriesCollectionEditorFromAL.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Called to edit a value in collection editor
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.SeriesCollectionEditorFromAL.CreateInstance(System.Type)">
+            <summary>
+            Creates a new instance of a column for custom collection
+            </summary>
+            <param name="itemType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadChartComponentEditor.GetPropertyByName(System.String)">
+            <summary>
+            Method returns property descriptor by property name.
+            </summary>
+            <param name="propName">Property name</param>
+            <returns>Property descriptor</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadChartEventArgs">
+            <summary>
+            Summary description for EventArgs.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.ChartPrinting">
+            <summary>
+            Chart printing support
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.ChartPrinting.PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Prints chart on the page
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.ChartPrinting.PrintChart(System.Drawing.Printing.PrinterSettings,System.Drawing.Printing.PageSettings,Telerik.WinControls.UI.ChartPrintOptions)">
+            <summary>
+            Prints chart
+            </summary>
+            <param name="printerSettings">Specifies information about how a document is printed, including the printer that prints it.</param>
+            <param name="pageSettings">Specifies settings that apply to a single, printed page.</param>
+            <param name="options">Sets the printer select dialog</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.ChartPrinting.PrintChart">
+            <summary>
+            Simply sends chart to default printer
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.ChartPrinting.PrintChart(Telerik.WinControls.UI.ChartPrintOptions)">
+            <summary>
+            Shows the printer dialog before print
+            </summary>
+            <param name="dialogOptions"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.ChartPrinting.ShowPageSetupDialog">
+            <summary>
+            Shows the page setup dialog
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.RadChart">
+            <summary>
+            The class represents the base functionality of the RadChart.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.AddChartSeries(Telerik.Charting.ChartSeries)">
+            <summary>
+            Adds a new data series to the RadChart's series collection.
+            </summary>
+            <param name="chartSeries"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.#ctor">
+            <summary>
+            Creates a new instance of RadChart.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.ClearSkin">
+            <summary>
+            Resets current chart's skin to default
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.LoadSkin(System.IO.TextWriter)">
+            <summary>
+            Loads user skin from a TextWriter object
+            </summary>
+            <param name="text">TextWriter object</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.SaveSkin">
+            <summary>
+            Exports current chart's skin into TextWriter object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.SaveToXml">
+            <summary>
+            Exports current chart's settings into TextWriter object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.LoadFromXml(System.IO.TextReader)">
+            <summary>
+            Loads entire chart settings from a TextWriter object
+            </summary>
+            <param name="text">TextWriter object</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.SaveToXml(System.String)">
+            <summary>
+            Saves the chart's state into XML file in the specified by fileName location.
+            </summary>
+            <param name="fileName">Path to the file</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.LoadFromXml(System.String)">
+            <summary>
+            Loads RadChart's settings and data from external XML file.
+            </summary>
+            <param name="relativeFileName"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.Clone">
+            <summary>
+            Clone RadChart object
+            </summary>
+            <returns>New instance of RadChart</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.Clear">
+            <summary>
+            Removes chart's data series and axis items.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.GetSeries(System.Drawing.Color)">
+            <summary>
+            Gets a reference to the data series object with the specified color.
+            </summary>
+            <param name="seriesColor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.CreateSeries(System.String,System.Drawing.Color,System.Drawing.Color,Telerik.Charting.ChartSeriesType)">
+            <summary>
+            Creates a new chart series and adds it to the series collection.
+            </summary>
+            <param name="seriesName"></param>
+            <param name="mainColor"></param>
+            <param name="secondColor"></param>
+            <param name="chartSeriesType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.Save(System.String)">
+            <summary>
+            Saves the chart with the specified file name.
+            </summary>
+            <param name="filename"></param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.Save(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Saves the chart with the specified file name.
+            </summary>
+            <param name="stream">Stream object</param>
+            <param name="imageFormat">Image format</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.GetBitmap">
+            <summary>
+            Get chart as bitmap
+            </summary>
+            <returns>Chart bitmap</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.DataBind">
+            <summary>
+            Binds a data source to the invoked control
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.RadChart.Dispose(System.Boolean)">
+            <summary>
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.CustomFigures">
+            <summary>
+            Specifies the custom palettes for chart
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.AutoLayout">
+            <summary>
+            Specifies AutoLayout mode to all items on the chart control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.AutoTextWrap">
+            <summary>
+            Specifies AutoLayout mode to all items on the chart control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.SeriesPalette">
+            <summary>
+            Specifies the series palette
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.Appearance">
+            <summary>
+            Chart style
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.SkinsOverrideStyles">
+            <summary>
+            Should skin override user setting or not
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.DataManager">
+            <summary>
+            Data management support object
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.Series">
+            <summary>
+            Collection of the chart's data series.
+            </summary>		
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.Height">
+            <summary>
+            Chart height in pixels
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.Width">
+            <summary>
+            Chart width in pixels
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.Legend">
+            <summary>
+            Gets or sets RadChart's legend object.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.PlotArea">
+            <summary>
+            Specifies the chart's plot area.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.ChartTitle">
+            <summary>
+            The chart title message.
+            </summary>		
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.ChartImageFormat">
+            <summary>
+            Specifies the image format for export
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.TextQuality">
+            <summary>
+            Specifies the quality at which the text is rendered.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.CustomPalettes">
+            <summary>
+            Specifies the custom palettes for chart
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.SeriesOrientation">
+            <summary>
+            Specifies the orientation of chart series on the plot area.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.IntelligentLabelsEnabled">
+            <summary>
+            Enables / disables Intelligent labels logic for series items labels in all plot areas.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.DataSource">
+            <summary>
+            The DataSource object
+            </summary>
+            <remarks>Gets or sets the object from which the chart control retrieves its list of data items</remarks>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.DataMember">
+            <summary>
+            Gets or sets the name of the list of data that the data-bound control binds to, in cases where the data source contains more than one distinct list of data items.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.DataGroupColumn">
+            <summary>
+            Gets or sets the name of the DataSource column (member) that will be used to split one column data into several chart Series
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.RadChart.Printing">
+            <summary>
+            Printing manager
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.WinControls.Docking</name>
+    </assembly>
+    <members>
+        <member name="F:Telerik.WinControls.Docking.Assistance.DockableSelectorBase.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.DockableSelectorBase.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.DefaultDockableSelector.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.Assistance.DefaultDockableSelector.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.DefaultDockableSelector.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.Assistance.DockingGuidesForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.DockingGuidesForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.Assistance.DockingGuidesForm.Graphics">
+            <summary>
+            Returns a Graphics object to be used for rendering on the guide form.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.DockingGuidesManager.UpdateHostAndOwnedForms">
+            <summary>
+            Calls Update on the host control and any of the host control's owned forms.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.Assistance.DockingGuidesManager.DockingGuidesInfo">
+            <summary>
+            Returns an information package about the active docking guide 
+            If none of the guides are active, returns null.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.QuickAccessManager.PreFilterMessage(System.Windows.Forms.Message@)">
+            <summary>
+            	<span id="ctl00_ContentPlaceHolder1_src1_resRC_ctl02_LabelAbstract">Filters out a
+            message before it is dispatched.</span>
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.Assistance.QuickAccessManager.NavigationForm">
+            <summary>
+            Gets or sets the quickbrowser window. Quick Browser window is used to navigate
+            between current tool windows.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.Assistance.QuickNavigator.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.QuickNavigator.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Assistance.QuickNavigator.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.Assistance.RadDockableDescription">
+            <exclude/>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Telerik.WinControls.Docking.Assistance.RadDockableSelectorDesignTimeData" -->
+        <!-- Badly formed XML comment ignored for member "T:Telerik.WinControls.Docking.Assistance.RadDockingGuidesDesignTimeData" -->
+        <member name="P:Telerik.WinControls.Docking.AutoHideContainer.BorderStyle">
+            <summary>
+            Specifies the border style for a control. 
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.AutoHideContainer.SizeWeight">
+            <summary>
+            this is the statistical weight of the container which is taken into account
+            when the contaner participates in a layout chain.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockSite">
+            <summary>
+            Exposes methods and properties for a docking site class. The latter controls all
+            docking operations and parts of the docking system in a host container instance. This
+            class is instantiated only by the Dock Manager and not by the user. Inside the host
+            container there are four docking zones controlled by the docking site for the docked
+            content: left sided, right sided, top sided, bottom sided. Also there is a fifth
+            special zone that fills the center of the host container, and if there are no other
+            docking zones, it consumes all the client area of the host container.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IDockingSite">
+            <summary>
+            Exposes methods and properties for a docking site class. The latter controls all
+            docking operations and parts of the docking system in a host container instance. This
+            class is instantiated only by the Dock Manager and not by the user. Inside the host
+            container there are four docking zones controlled by the docking site for the docked
+            content: left sided, right sided, top sided, bottom sided. Also there is a fifth
+            special zone that fills the center of the host container, and if there are no other
+            docking zones, it consumes all the client area of the host container.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the IDockingSite as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            inside a IDockingSite using another
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.SetDocument(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in document container
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.Float(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Changes the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            of a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance to Floating.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.Show(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Shows a hidden
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.Hide(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.Hide(Telerik.WinControls.Docking.IDockable,System.Boolean)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+            <param name="autoHide">
+            if <strong>true</strong>, the IDockable is changed to<br/>
+            	<a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">AutoHide</a>
+            state instead of
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">Hidden</a>.
+            </param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.Remove(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Removes a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.IsOverDockingArea(System.Drawing.Point)">
+            <summary>
+            Gets a value specifying whether mouse cursor is over the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite~DockingArea.html">DockingArea</a>
+            of a IDockingSite instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.LoadState(System.Object)">
+            <summary>This method is reserved for future use.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockingSite.SaveState">
+            <summary>This method is reserved for future use.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.DockingArea">
+            <summary>
+            Gets the rectangle that represents the client area of the IDockingSite
+            instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.IsEmpty">
+            <summary>
+            Gets whether there are any
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockale</a>
+            instances docked inside the docking site.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.ManagedDockables">
+            <summary>
+            Gets a list of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instances, docked and managed by a particular instance of IDockingSite.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.Host">
+            <summary>Gets a reference to the Control that parents the IDockingSite instance.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.HostForm">
+            <summary>Gets a reference to the Form that parents the IDockingSite instance.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.DockingSiteType">
+            <summary>Gets the type of the IDockingSite</summary>
+            <value>
+            returns a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">DockingSiteType</a>
+            value.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.DockingManager">
+            <summary>
+            Gets or sets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockManager.html">IDockManager</a>
+            that is the owner of this IDockingSite instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockingSite.Active">
+            <summary>Gets the Active IDockable for a particular IDockingSite instance.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.IsOverDockingArea(System.Drawing.Point)">
+            <summary>
+            Gets a value specifying whether mouse cursor is over the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite~DockingArea.html">DockingArea</a>
+            of a IDockingSite instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the IDockingSite as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            inside a IDockingSite using another
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.Float(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Changes the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            of a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance to Floating.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.Show(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Shows a hidden
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.Hide(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.Hide(Telerik.WinControls.Docking.IDockable,System.Boolean)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+            <param name="autoHide">
+            if <strong>true</strong>, the IDockable is changed to<br/>
+            	<a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">AutoHide</a>
+            state instead of
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">Hidden</a>.
+            </param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.Remove(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Removes a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.LoadState(System.Object)">
+            <summary>This method is reserved for future use.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockSite.SaveState">
+            <summary>This method is reserved for future use.</summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockSite.SplitterMoving">
+            <summary>
+            	Occurs when any of the splitters is moving.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockSite.SplitterMoved">
+            <summary>
+            	Occurs when any of the splitters is moved.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockSite.Error">
+            <summary>
+            Fires when an docking operation throws an exception.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.PresenterMinSize">
+            <summary>
+            The default minimum valid size of a presenter inside the IDockingSite
+            layout.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.DockingArea">
+            <summary>
+            Gets the rectangle that represents the client area of the IDockingSite
+            instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.IsEmpty">
+            <summary>
+            Gets whether there are any
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockale</a>
+            instances docked inside the docking site.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.ManagedDockables">
+            <summary>
+            Gets a list of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instances, docked and managed by a particular instance of IDockingSite.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.Host">
+            <summary>Gets a reference to the Control that parents the IDockingSite instance.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.HostForm">
+            <summary>Gets a reference to the Form that parents the IDockingSite instance.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.DockingSiteType">
+            <summary>Gets the type of the IDockingSite</summary>
+            <value>
+            returns a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">DockingSiteType</a>
+            value.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.DockingManager">
+            <summary>
+            Gets or sets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockManager.html">IDockManager</a>
+            that is the owner of this IDockingSite instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockSite.Active">
+            <summary>Gets the Active IDockable for a particular IDockingSite instance.</summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.AutoHideTab">
+            <summary>Represents a Tab used to manage a IDockable inside the autohide system.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockContextMenu.GetDefaultItem(System.String)">
+            <summary>
+            Get default child menu item by key name
+            </summary>
+            <param name="name"> key names:
+            Floating,
+            Dockable,
+            TabbedDocument,
+            AutoHide,
+            Hide,
+            Close,
+            CloseAll,
+            HorizontalTabGroup,
+            VerticalTabGroup,
+            MoveToPrevious,
+            MoveToNext,
+            Cancel
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IDockable">
+            <summary>
+            Exposes methods and properties that should be implemented by a class to
+            succesfully participate in the docking layout.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.ILayoutController">
+            <summary>
+            Exposes methods and properties that should be implemented by any IDockable which
+            needs to interact with its corresponding layout presenter.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.ILayoutController.DefaultPresenter">
+            <summary>
+            Gets the associated
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.ILayoutPresenter.html">ILayoutPresenter</a>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockable.Activate">
+            <summary>Activates the IDockable instance and gives it focus.</summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.IDockable.Activated">
+            <summary>
+            	<para>Occurs when the IDockable instance is activated in code or by the
+                user.</para>
+            </summary>
+            <remarks>
+            To activate a IDockable instance at run time using code, call the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable~Activate.html">Activate</a>
+            method. You can use this event for tasks such as updating the contents of the IDockable
+            instance based on changes made when the instance was not activated.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.DockState">
+            <summary>Represents the state of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            values.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.DockType">
+            <summary>Represents the type of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockType.html">DockType</a>
+            values.
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.DockPosition">
+            <summary>
+            Gets or sets the position of the docked instance relative to the DockTarget which
+            control borders are docked to its parent control and determines how a control is
+            resized with its parent.
+            </summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            values. The default is
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">Default</a><font color="black" size="+0">.</font>
+            </value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.DockManager">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockManager.html">IDockManager</a>
+            responsible for the docking operations with this IDockable instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.DockingSite">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            where the IDockable instance is docked at the moment.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.ID">
+            <summary>
+            Gets or sets the programmatic identifier assigned to the IDockable
+            instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.Text">
+            <summary>Gets or sets the text associated with this IDockable instance.</summary>
+            <remarks>
+            	<para>When overriding the <b>Text</b> property in a derived class, use the base
+                class's <b>Text</b> property to extend the base implementation. Otherwise, you must
+                provide all the implementation. You are not required to override both the
+                <b>get</b> and <b>set</b> accessors of the <b>Text</b> property; you can override
+                only one if needed.</para>
+            </remarks>
+            <value>The text associated with this instance.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.Description">
+            <summary>Gets or sets the description of an IDockable instance.</summary>
+            <value>A string describing the IDockable instance</value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.PreferredDockSize">
+            <summary>
+            Gets or sets preferred size used when the IDockable is docked inside a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            . If the proposed size is smaller than the minimal one, the minimal one is used. The
+            layout engine may calculate different size if the layout has some constraints, and the
+            preffered size may not be allowed if the operation results in fault layout.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.PreferredFloatSize">
+            <summary>
+            Gets or sets preferred size of the floating container used when the IDockable is
+            changed into
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">Floating</a>
+            state.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockable.Image">
+            <summary>
+            Gets or sets image of IDockable 
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IDraggable">
+            <summary>
+            Exposes methods and properties required by a draggable object.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDraggable.OnDragBegan">
+            <summary>
+            Invoked when the drag begins.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDraggable.OnDragEnded">
+            <summary>
+            Invoked when drag ends.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDraggable.DragManager">
+            <summary>
+            Gets or sets the drag manager.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDraggable.DragableFrame">
+            <summary>
+            Retrieves the starting rectangle of the draggable object in screen coordinates.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.FloatContainer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.FloatContainer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.FloatContainer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.Design.DockingDesignerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Design.DockingDesignerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Design.DockingDesignerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.Design.UpgradeToRadDockWizardForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Design.UpgradeToRadDockWizardForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.Design.UpgradeToRadDockWizardForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IToolWindowLayoutController">
+            <summary>
+            Exposes methods and properties that should be implemented by any IDockable which
+            needs to interact with its corresponding layout presenter. Specialization of
+            ILayoutController for presenters that render the classic toolwindow tabbed and caption
+            interface.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.CaptionVisible">
+            <summary>Gets or sets whether the caption element of the presenter will be visible.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.DockableTab">
+            <summary>
+            Gets  the associated dockable tab item element. 
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.TabStripVisible">
+            <summary>
+            Gets or sets whether the tabstrip element of the presenter will be
+            visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.CloseButtonVisible">
+            <summary>
+            Gets or sets whether the close button inside the caption element of the presenter
+            will be visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.HideButtonVisible">
+            <summary>
+            Gets or sets whether the autohide button inside the caption element of the
+            presenter will be visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.DropDownButtonVisible">
+            <summary>
+            Gets or sets whether the dropdown button inside the caption element of the
+            presenter will be visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IToolWindowLayoutController.MinSize">
+            <summary>
+            Determines the minimum distance of pixels of the splitter from the currently dependent
+            edges of ToolWindow
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockWindow.Activate">
+            <summary>
+            Activates the IDockable instance and gives it focus.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockWindow.Hide">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout and change visibility to false.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockWindow.Show">
+            <summary>
+            Shows a hidden
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout and change visibility to true.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockWindow.DockTo(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            inside the main IDockingSite (the primary site) using another
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            as a target.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.ToolTipText">
+            <summary>
+            Determines the ToolTip show when the mouse hovers over control or associated layout presenter.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.DockState">
+            <summary>Represents the state of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            values.
+            </value>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.DockType">
+            <summary>Represents the type of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockType.html">DockType</a>
+            values.
+            </value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.WinControls.Docking.DockWindow.DockPosition" -->
+        <member name="P:Telerik.WinControls.Docking.DockWindow.DockManager">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockManager.html">IDockManager</a>
+            responsible for the docking operations with this IDockable instance.
+            </summary>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.DockingSite">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            where the IDockable instance is docked at the moment.
+            </summary>
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.WinControls.Docking.DockWindow.ID" -->
+        <member name="P:Telerik.WinControls.Docking.DockWindow.Description">
+            <summary>Gets or sets the description of an IDockable instance.</summary>
+            <value>A string describing the IDockable instance</value>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.AutoHideSize">
+            <summary>
+            Gets or sets size when the IDockable is in auto hide mode
+            </summary>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.PreferredDockSize">
+            <summary>
+            Gets or sets preferred size used when the IDockable is docked inside a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            . If the proposed size is smaller than the minimal one, the minimal one is used. The
+            layout engine may calculate different size if the layout has some constraints, and the
+            preffered size may not be allowed if the operation results in fault layout.
+            </summary>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.PreferredFloatSize">
+            <summary>
+            Gets or sets preferred size of the floating container used when the IDockable is
+            changed into
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">Floating</a>
+            state.
+            </summary>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.Image">
+            <summary>
+             Gets or sets the image that is displayed on a tab element.
+             </summary>		 
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockWindow.Activated">
+            <summary>
+            	Occurs when the IDockable is activated.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockWindow.Deactivated">
+            <summary>
+            	Occurs when the IDockable is activated.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockWindow.Closing">
+            <summary>
+            	Occurs when the IDockable is closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockWindow.Closed">
+            <summary>
+            	Occurs when the IDockable is closed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.Text">
+            <summary>Gets or sets the text associated with this IDockable instance.</summary>
+            <remarks>
+            	<para>When overriding the <b>Text</b> property in a derived class, use the base
+                class's <b>Text</b> property to extend the base implementation. Otherwise, you must
+                provide all the implementation. You are not required to override both the
+                <b>get</b> and <b>set</b> accessors of the <b>Text</b> property; you can override
+                only one if needed.</para>
+            </remarks>
+            <value>The text associated with this instance.</value>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.DockableTab">
+            <summary>
+             Gets the related dockable tab item.
+             </summary>	
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.CaptionVisible">
+            <summary>
+            Gets or sets the caption visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.TabStripVisible">
+            <summary>
+            Gets or sets the tab strip visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.CloseButtonVisible">
+            <summary>
+            Gets or sets the close button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.HideButtonVisible">
+            <summary>
+            Gets or sets the hide button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockWindow.DropDownButtonVisible">
+            <summary>
+            Gets or sets the drop down button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DocumentPane.MdiChild">
+            <summary>
+            Gets MDI child form when DocumentPane is host of MDI child form and AutoDetectMdiChildForms is set to true
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DocumentPane.DockState">
+            <summary>Represents the state of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            values.
+            </value>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DocumentPane.DockType">
+            <summary>Represents the type of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockType.html">DockType</a>
+            values.
+            </value>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DocumentPane.Text">
+            <summary>Gets or sets the text associated with this IDockable instance.</summary>
+            <remarks>
+            	<para>When overriding the <b>Text</b> property in a derived class, use the base
+                class's <b>Text</b> property to extend the base implementation. Otherwise, you must
+                provide all the implementation. You are not required to override both the
+                <b>get</b> and <b>set</b> accessors of the <b>Text</b> property; you can override
+                only one if needed.</para>
+            </remarks>
+            <value>The text associated with this instance.</value>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.UserDockControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.UserDockControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.UserDockControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.Size">
+            <summary>
+            Gets or sets size used when the IDockable is docked inside a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            . If the proposed size is smaller than the minimal one, the minimal one is used. The
+            layout engine may calculate different size if the layout has some constraints, and the
+            size may not be allowed if the operation results in fault layout.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.DockState">
+            <summary>Represents the state of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            values.
+            </value>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.Image">
+            <summary>
+             Gets or sets the image that is displayed on a tab element.
+             </summary>		
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockControl.Activated">
+            <summary>
+            	Occurs when the IDockable is activated.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockControl.Deactivated">
+            <summary>
+            	Occurs when the IDockable is activated.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockControl.Closing">
+            <summary>
+            	Occurs when the IDockable is closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockControl.Closed">
+            <summary>
+            	Occurs when the IDockable is closed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.CaptionVisible">
+            <summary>
+            Gets or sets the caption visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.TabStripVisible">
+            <summary>
+            Gets or sets the tab strip visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.CloseButtonVisible">
+            <summary>
+            Gets or sets the close button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.HideButtonVisible">
+            <summary>
+            Gets or sets the hide button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockControl.DropDownButtonVisible">
+            <summary>
+            Gets or sets the drop down button visibility.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.UserDockForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.UserDockForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.UserDockForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.DockState">
+            <summary>Represents the state of the IDockable instance.</summary>
+            <value>
+            One of the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            values.
+            </value>
+            
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockForm.Activated">
+            <summary>
+            	Occurs when the IDockable is activated.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockForm.Deactivated">
+            <summary>
+            	Occurs when the IDockable is activated.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockForm.Closing">
+            <summary>
+            	Occurs when the IDockable is closed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.UserDockForm.Closed">
+            <summary>
+            	Occurs when the IDockable is closed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.Image">
+            <summary>
+             Gets or sets the image that is displayed on a tab element.
+             </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.CaptionVisible">
+            <summary>
+            Gets or sets the caption visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.TabStripVisible">
+            <summary>
+            Gets or sets the tab strip visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.CloseButtonVisible">
+            <summary>
+            Gets or sets the close button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.HideButtonVisible">
+            <summary>
+            Gets or sets the hide button visibility.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.UserDockForm.DropDownButtonVisible">
+            <summary>
+            Gets or sets the drop down button visibility.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockLayoutInfo">
+            <summary>
+            Represents layout information of the docking system.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IDockTarget">
+            <summary>
+            Exposes methods and properties for dock targets.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IDropTarget">
+            <summary>
+            Exposes methods and properties for a drop target in the telerik docking system.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDropTarget.IsDropAllowed(System.Object)">
+            <summary>
+            Gets a value indicating whether the drop target should allow drop operation
+            inside its bounds. 
+            </summary>
+            <param name="draggedInstance">The dragged control</param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDropTarget.DropTargetFrame">
+            <summary>
+            Gets the drop frame.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.ILayoutPresenter">
+            <summary>
+            Exposes methods and properties that should be implemented by any object that acts
+            as a LayoutPresenter.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.ILayoutPresenter.Initialize(Telerik.WinControls.Docking.LayoutList)">
+            <summary>
+            Initializes the ILayoutPresenter instance with a list of IDockable
+            objects.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.ILayoutPresenter.Clear">
+            <summary>
+            Clears all current values and states inside a particular ILayoutPresenter
+            instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.ILayoutPresenter.Activate">
+            <summary>Activates the presenter.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.ILayoutPresenter.Deactivate">
+            <summary>Deactivates the presenter.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.ILayoutPresenter.PresenterClientBounds">
+            <summary>
+            	<para>Gets the rectangle that represents the client area of the ILayoutPresenter
+                instance in IDockingSite coordinates.</para>
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.ILayoutPresenter.PresenterClientRectangle">
+            <summary>
+            	<para>Gets the rectangle that represents the client area of the ILayoutPresenter
+                instance in presenter coordinates.</para>
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.ILayoutPresenter.LayoutList">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.LayoutList.html">LayoutList</a>
+            containing the IDockable instances managed by a particular instance of
+            ILayoutPresenter.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.ILayoutPresenter.LayoutPresenterSite">
+            <summary>
+            Gets a reference to the container that hosts the layout presenter. Usually it
+            will be a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.ILayoutPresenter.IsActive">
+            <summary>
+            Gets a value whether a particular instance of ILayoutPresenter is active and
+            contains the active IDockable in the docking system.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockTarget.GetSuggestedDockPosition(Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Suggests allowed DockPosition value based on a requested DockPosition
+            value.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockTarget.DockManager">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockManager.html">IDockManager</a>
+            responsible for the docking operations with this IDockTarget instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockTarget.DockingSite">
+            <summary>
+            Gets the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockingSite.html">IDockingSite</a>
+            where the IDockTarget instance is situated at the moment.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockTarget.DockPosition">
+            <summary>
+            Gets the bitwise value containing the allowed DockPosition values for a
+            particular instance of IDockTarget.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockLayoutInfo.#ctor">
+            <summary>
+            Initializes a new instance of the DockLayoutInfo class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockLayoutInfo.#ctor(System.Drawing.Point)">
+            <summary>
+            Initializes a new instance of the DockLayoutInfo class using the mouse position.
+            </summary>
+            <param name="mousePosition"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockLayoutInfo.#ctor(System.Drawing.Point,Telerik.WinControls.Docking.IDockManager)">
+            <summary>
+            Initializes a new instance of the DockLayoutInfo class using mouse position
+            and docking manager.
+            </summary>
+            <param name="mousePosition"></param>
+            <param name="dockingManager"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockLayoutInfo.IsDropAllowed(System.Object)">
+            <commentsfrom cref="!:Telerik.WinControls.Docking.DragAndDrop.IDropTarget.IsDropOperationAllowed" filter=""/>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockLayoutInfo.DockTargetControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockLayoutInfo.DockTarget">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockLayoutInfo.DockTargetScreenBounds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockTargetComparer">
+            <exclude/>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DragManager">
+            <summary>
+            Represents the DragManager class. Implements 
+            IMessageFilter which filters out a message before it is dispatched and 
+            IDragmanager which exposes a drag manager functionality.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IDragManager">
+            <summary>
+            Exposes methods and properties for a dragging manager.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDragManager.BeginDrag(System.Drawing.Point,Telerik.WinControls.Docking.IDraggable,Telerik.WinControls.Docking.ILayoutPresenter)">
+            <summary>
+            Exposes a method which initiates dragging.
+            </summary>
+            <param name="mousePosition"></param>
+            <param name="draggedInstance"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDragManager.CancelDrag">
+            <summary>
+            Exposes a method that cancels the dragging.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDragManager.Drag(System.Drawing.Point)">
+            <summary>
+            Supports the telerik docking functionality.
+            </summary>
+            <param name="mousePosition"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDragManager.EndDrag(System.Drawing.Point)">
+            <summary>
+            Exposes a method that ends the dragging.
+            </summary>
+            <param name="mousePosition"></param>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDragManager.Dragging">
+            <summary>
+            Gets a boolean value indicating whether dragging is initiated.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDragManager.DraggedInstance">
+            <summary>
+            Gets a value indicating the dragged instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragManager.#ctor">
+            <summary>
+            Initializes a new instance of the DragManager classr.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragManager.BeginDrag(System.Drawing.Point,Telerik.WinControls.Docking.IDraggable,Telerik.WinControls.Docking.ILayoutPresenter)">
+            <summary>Invoked when the dragging begin.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragManager.CancelDrag">
+            <summary>Cancels the dragging.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragManager.Drag(System.Drawing.Point)">
+            <summary>Initiates the dragging.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragManager.EndDrag(System.Drawing.Point)">
+            <summary>Invoked when dragging is finished.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragManager.Dispose">
+            <summary>
+            Deterministically frees the unmanaged resources.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DragManager.Dragging">
+            <commentsfrom cref="P:Telerik.WinControls.Docking.IDragManager.Dragging" filter=""/>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DragManager.DraggedInstance">
+            <commentsfrom cref="P:Telerik.WinControls.Docking.IDragManager.DraggedInstance" filter=""/>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.#ctor(Telerik.WinControls.Docking.IDockManager)">
+            <summary>
+            Initializes a new instance of the DragManager class using the docking manager.
+            </summary>
+            <param name="dockingManager"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.Dispose">
+            <summary>
+            Deterministically frees the unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.BeginDrag(System.Drawing.Point,Telerik.WinControls.Docking.IDraggable,Telerik.WinControls.Docking.ILayoutPresenter)">
+            <summary>Invoked when the dragging begin.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.Drag(System.Drawing.Point)">
+            <summary>Initiates the dragging.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.EndDrag(System.Drawing.Point)">
+            <summary>Invoked when dragging is finished.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.GetValidDockSites(System.Drawing.Point)">
+            <summary>Supports telerik docking framework.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.GetDefaultDockSite(System.Drawing.Point)">
+            <summary>Supports telerik docking framework.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.GetDefaultDockTarget(System.Drawing.Point)">
+            <summary>Supports telerik docking framework.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DragDockManager.IsOverDockingArea">
+            <summary>
+            Retrieves a value indicating whether currently dragged tool window is on the
+            docking area.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DragDockManager.DockingGuidesManager">
+            <summary>
+            Gets or sets dockings guide manager. Guide manager class is responsible for
+            helping the user by providing compass and arrows for easier docking.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DragDockManager.DefaultDockTarget">
+            <summary>Gets or sets the docklayout panel of the current dock target.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DragDockManager.PreviousDockTarget">
+            <summary>Gets or sets the DockLayout info of the previous dock target.</summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockingGuidesPosition">
+            <summary>
+            Defines the position of the docking guides.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingGuidesPosition.Left">
+            <summary>
+            Indicates left position of the docking guides.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingGuidesPosition.Top">
+            <summary>
+            Indicates top position of the docking guides.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingGuidesPosition.Right">
+            <summary>
+            Indicates right position of the docking guides.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingGuidesPosition.Bottom">
+            <summary>
+            Indicates left position of the docking guides.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingGuidesPosition.Center">
+            <summary>
+            Indicates central position of the docking guides.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingGuidesPosition.Default">
+            <summary>
+            Indicates default position of the docking guides.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockingHintsType">
+            <summary>
+            Defines how the draggable objects appear when dragged.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingHintsType.HalftoneFrame">
+            <summary>
+            Indicates that the draggable object is represented by a halftone patern frame.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingHintsType.ReversibleFrame">
+            <summary>
+            Indicates that the draggable object is represented by a reversible color frame.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingHintsType.ReversibleRectangle">
+            <summary>
+            Indicates that the draggable object is represented by a reversible color rectangle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingHintsType.TranslucentColorRectangle">
+            <summary>
+            Indicates that the draggable object is represented by a translucent rectangle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingHintsType.TranslucentGhostRectangle">
+            <summary>
+            Indicates that the draggable object is represented by a translucent rectangle that renders the dragged instance content.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockingSiteType">
+            <summary>
+            Defines the types of IDockSite instances supported by the docking system.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingSiteType.HostContainerSite">
+            <summary>
+            Represents the main docking site of a IDockManager
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingSiteType.FloatingContainerSite">
+            <summary>
+            Represents the floating docking sites
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingSiteType.MDIRootSite">
+            <summary>
+            Represents a special docking site type that handles MDI client area in MDI applications.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockingSiteType.Default">
+            <summary>
+            Represents a default value, not a valid docking site type.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockPosition">
+            <summary>
+            Defines the docking position of a IDockable.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockPosition.Left">
+            <summary>
+            Indicates that the IDockable will be docked to the left side of the targeted IDockTarget.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockPosition.Top">
+            <summary>
+            Indicates that the IDockable will be docked to the top side of the targeted IDockTarget.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockPosition.Right">
+            <summary>
+            Indicates that the IDockable will be docked to the right side of the targeted IDockTarget.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockPosition.Bottom">
+            <summary>
+            Indicates that the IDockable will be docked to the bottom side of the targeted IDockTarget.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockPosition.Fill">
+            <summary>
+            Indicates that the IDockable will fill the targeted IDockTarget.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockPosition.Default">
+            <summary>
+             /// <summary>
+            Indicates that the IDockable will fill the targeted IDockTarget.
+            </summary>
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockState">
+            <summary>
+            Defines the possible valid states for IDockable instances.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockState.Floating">
+            <summary>
+            Indicates that the IDockable instance is floating.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockState.Docked">
+            <summary>
+            Indicates that the IDockable instance is docked.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockState.TabbedDocument">
+            <summary>
+            Indicates that the IDockable instance is docked inside a TabbedDocument interface.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockState.AutoHide">
+            <summary>
+            Indicates that the IDockable instance is managed by the auto-hide sub-system of the docking system.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockState.Hidden">
+            <summary>
+            Indicates that the IDockable instance is in a hidden/removed state.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockState.Default">
+            <summary>
+            Indicates that the DockState is not set. This is not a valid state inside the docking system.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockType">
+            <summary>
+            Defines the possible valid types for IDockable instances.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockType.ToolWindow">
+            <summary>
+            Indicates that the IDockable instance is ToolWindow.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.DockType.Document">
+            <summary>
+            Indicates that the IDockable instance is docked inside a TabbedDocument interface.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.GetManagedDockables(Telerik.WinControls.Docking.DockState)">
+            <summary>
+            Gets a list of IDockables that are in a specific
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            managed by this IDockManager instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.GetManagedDockables">
+            <summary>Gets a list of IDockables managed by this IDockManager instance.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the main IDockingSite instance (the primary site) as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockingSite,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the specified IDockingSite instance as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            inside the main IDockingSite (the primary site) using another
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.Float(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Changes the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            of a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance to Floating.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.Show(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Shows a hidden
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.Hide(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.Hide(Telerik.WinControls.Docking.IDockable,System.Boolean)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.Remove(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Removes a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.CreateFloatingSite">
+            <summary>
+            Creates a IDockingSite system (site and container) of type
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">FloatingContainerSite</a>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.CreateFloatingSite(Telerik.WinControls.Docking.IDockable,System.Drawing.Rectangle)">
+            <summary>
+            Creates a IDockingSite system (site and container) of type
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">FloatingContainerSite</a>
+            with the specified Position and Size.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.CreateFloatingSite(Telerik.WinControls.Docking.IDockable,System.Drawing.Point,System.Drawing.Size)">
+            <summary>
+            Creates a IDockingSite system (site and container) of type
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">FloatingContainerSite</a>
+            with the specified Position and Size.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.IDockManager.DisposeFloatingSite(Telerik.WinControls.Docking.IDockingSite)">
+            <summary>Destroys a floating site and its container.</summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.IDockManager.DockingStateChanged">
+            <summary>
+            Occurs when a particular IDockable instance changes its
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.IDockManager.DockingStateChanging">
+            <summary>
+            Occurs when a particular IDockable instance begins the change of its
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>.
+            This event is cancelable.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.DockingSites">
+            <summary>
+            Gets a list of all IDockingSite instances managed by a IDockManager
+            instance.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.PrimarySite">
+            <summary>Gets a reference to the main IDockingSite instance.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.DragManager">
+            <summary>
+            Gets or sets a reference to the IDragManager that is used to perform the
+            interactive docking behavior.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.EnableDockingGuides">
+            <summary>
+            Gets or sets whether DockingGuides will be available when interactive drag and
+            drop is performed by the user.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.AllowFloating">
+            <summary>
+            Gets or sets whether floating operations are allowed through the API or
+            interactively by the user.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.AllowHiding">
+            <summary>
+            Gets or sets whether hiding operations are allowed through the API or
+            interactively by the user.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.AllowDrag">
+            <summary>Gets or sets whether drag and drop operations are allowed.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.AllowDocking">
+            <summary>
+            Gets or sets whether docking operations are allowed through the API or
+            interactively by the user.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.IDockManager.IsDesignMode">
+            <summary>Gets whether the docking system is on a design surface.</summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.IFloatContainer">
+            <summary>This interface is reserved for future use.</summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.CaptionButton.ButtonType">
+            <summary>
+            Defines the button types used in a IDockable: Close and AutoHide.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.CaptionButton.ButtonType.Close">
+            <summary>
+            Indicates Close button type.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.Docking.CaptionButton.ButtonType.AutoHide">
+            <summary>
+            Indicates AutoHide button type.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.CaptionLayout">
+            <summary>
+            Represents a caption layout.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockableTab">
+            <exclude/>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockPresenterCaptionElement.#ctor">
+            <summary>
+            Initializes a new instance of the DockCaptionElement class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockPresenterCaptionElement.Activate">
+            <summary>Activates the IDockable caption.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockPresenterCaptionElement.Deactivate">
+            <summary>Deactivates the IDockable caption.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockPresenterCaptionElement.EnsureVisible">
+            <summary>Ensures that the caption is visible.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockPresenterCaptionElement.IsPinned">
+            <summary>Gets a boolean value indicating whether the IDockable is pinned.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockPresenterCaptionElement.IsActivated">
+            <summary>Gets a boolean value idicating whether the caption is activated.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockPresenterCaptionElement.Text">
+            <summary>Gets or sets the text of the caption.</summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockingTabStripElement">
+            <summary>
+            A special RadTabStripElement, which is used in the docking to switch among different docking panes.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingTabStripElement.PerformLayoutCore(Telerik.WinControls.RadElement)">
+            <commentsfrom cref="M:Telerik.WinControls.Layouts.IRadLayoutElement.PerformLayout(Telerik.WinControls.RadElement)" filter=""/>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockPresenterControl.EndInit">
+            <summary>Resumes layout.</summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockPresenterDesignTimeData">
+            <summary>
+            Represents a helper class required for Visual Style Builder.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockPresenterElement.TabStripElement">
+            <summary>
+            Gets an instance of the TabStripElement which is used to display the tab items in the DockShimElement.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockPresenterElement.CaptionElement">
+            <summary>
+            Gets an instance of the DockCaptionElement which is used to display the active IDockable caption in the DockShimElement.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockPresenterElement.ContentPrimitive">
+            <summary>
+            Gets an instance of the DockCaptionElement which is used to display the active IDockable caption in the DockShimElement.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.LayoutableCollection`1.OnLayoutListChanged(Telerik.WinControls.Docking.LayoutListEventArgs)">
+            <summary>
+            	Raises the Click event.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.LayoutableCollection`1.Events">
+            <summary>
+            Provides a simple list of delegates.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.LayoutableCollection`1.LayoutListChanged">
+            <summary>
+            	Occurs when the inner list changes. Adding, removing ad inserting invokes this event. 
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.LayoutList.ActiveElementChanged">
+            <summary>
+            Occurs when the active element in the list is changed
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DocumentPresenterDesignTimeData">
+            <summary>
+            Represents a helper class required for Visual Style Builder.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DocumentPresenterElement.ActiveItemsDropDownButton">
+            <summary>
+            System button element used for store menu with active items in document container
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DocumentPresenterElement.TabStripElement">
+            <summary>
+            Gets an instance of the TabStripElement which is used to display the tab items in the DockShimElement.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.DockingManager">
+            <summary>
+            	<span style="FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+            Represents docking manager: the “controller” component that implements the complete
+            behavior of the docking system. It is responsible for the overall management of all
+            subsequent elements of the docking system.</span>
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.#cctor">
+            <summary>Initializes a new instance of DockingManager class.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.OnLayoutSaved">
+            <summary>
+            	Raises the <see cref="E:Telerik.WinControls.Docking.DockingManager.LayoutSaved"/> event.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.OnLayoutLoaded">
+            <summary>
+            	Raises the <see cref="E:Telerik.WinControls.Docking.DockingManager.LayoutLoaded"/> event.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the main IDockingSite instance (the primary site) as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            inside the main IDockingSite (the primary site) using another
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockingSite,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the specified IDockingSite instance as a target.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.SetDock(Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.IDockingSite,Telerik.WinControls.Docking.IDockable,Telerik.WinControls.Docking.DockPosition)">
+            <summary>
+            Docks a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance in the required
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockPosition.html">DockPosition</a>
+            using the specified IDockingSite instance as a target and another
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.Float(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Changes the
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a>
+            of a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance to Floating.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.Show(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Shows a hidden
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout of a IDockingSite.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.Hide(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Hides a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.Hide(Telerik.WinControls.Docking.IDockable,System.Boolean)">
+            <summary>
+            Hides or send to autohide a
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.Remove(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Removes a specified
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.IDockable.html">IDockable</a>
+            instance from the docking layout.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CreateFloatingSite">
+            <summary>
+            Creates a IDockingSite system (site and container) of type
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">FloatingContainerSite</a>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CreateFloatingSite(Telerik.WinControls.Docking.IDockable,System.Drawing.Rectangle)">
+            <summary>
+            Creates a IDockingSite system (site and container) of type
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">FloatingContainerSite</a>
+            with the specified Position and Size.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CreateFloatingSite(Telerik.WinControls.Docking.IDockable,System.Drawing.Point,System.Drawing.Size)">
+            <summary>
+            Creates a IDockingSite system (site and container) of type
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockingSiteType.html">FloatingContainerSite</a>
+            with the specified Position and Size.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.DisposeFloatingSite(Telerik.WinControls.Docking.IDockingSite)">
+            <summary>Destroys a floating site and its container.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.GetManagedDockables(Telerik.WinControls.Docking.DockState)">
+            <summary>
+             Get the collection of selected IDockable windows in docking manager based on
+            <a href="RadControlsDocking~Telerik.WinControls.Docking.DockState.html">DockState</a> flag filter
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.GetManagedDockables">
+            <summary>
+            Get the collection of all IDockable windows in docking manager
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CloseAllDocuments">
+            <summary>
+            Close all open Tabbed Documents
+            Window of ToolWindow type is hide
+            Window of TabbedDocument type is remove
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CloseAllDocuments(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Close all open Tabbed Documents exclude selected
+            Window of ToolWindow type is hide
+            Window of TabbedDocument type is remove
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CloseAllDocuments(System.Boolean)">
+            <summary>
+            Close all open Tabbed Documents and
+            remove document container
+            Window of ToolWindow type is hide
+            Window of TabbedDocument type is remove
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.CloseDocument(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Close selected IDockable
+            Window of ToolWindow type is hide
+            Window of TabbedDocument type is remove
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.MoveToNextTabGroup(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Move IDockable window to next document tab group if exist
+            when IDockable is in document mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.MoveToPreviousTabGroup(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Move IDockable window to previuos document tab group if exist
+            when IDockable is in document mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.NewHorizontalTabGroup(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Create new horizontal document tab group
+            when IDockable is in document mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.NewVerticalTabGroup(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Create new horizontal document tab group
+            when IDockable is in document mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.SetDocument(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Create new document to main document container
+            or attach IDockable from ToolWindow mode to TabbedDocument mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.RemoveDocument(Telerik.WinControls.Docking.IDockable)">
+            <summary>
+            Remove IDockable from TabbedDocument container
+            when is in TabbedDocument mode
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.Reset">
+            <summary>
+            Resets the docking manager. All tool windows and property changes are
+            discarded.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.SaveXML(System.String)">
+            <summary>Serializes the dock manager.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.LoadXML(System.String)">
+            <summary>Deserializes the dock manager.</summary>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.ActivateMdiChild(System.Windows.Forms.Form)">
+            <summary>Activates the MDI child of a form.</summary>
+            <param name="form">The child form to activate.</param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.OnMdiChildActivate(System.EventArgs)">
+            <summary>Raises the <see cref="E:System.Windows.Forms.Form.MdiChildActivate"></see> event.</summary>
+            <param name="e">The <see cref="T:System.EventArgs"></see> that contains the event data. </param>
+        </member>
+        <member name="M:Telerik.WinControls.Docking.DockingManager.OnMdiChildActivateInternal(System.Object,System.EventArgs)">
+            <summary>Raises the <see cref="E:System.Windows.Forms.Form.MdiChildActivate"></see> event.</summary>
+            <param name="e">The <see cref="T:System.EventArgs"></see> that contains the event data. </param>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.DefaultSize">
+            <summary>Gets the default size of the control.</summary>
+            <returns>The default size of the control.</returns>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.DockingSites">
+            <summary>
+            	<span style="FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+            Retrieves docking sites. Docking site class controls all docking operations and parts
+            of the docking system (docking stacks) in a <i style="mso-bidi-font-style: normal">host
+            container</i> instance. This class is instantiated only by the
+            <i style="mso-bidi-font-style: normal">Dock Manager</i> and not by the user. Inside the
+            <i style="mso-bidi-font-style: normal">host container</i> there are four docking zones
+            controlled by the <i style="mso-bidi-font-style: normal">docking site</i> for the
+            docked content: left sided, right sided, top sided, bottom sided</span>
+            	<span style="FONT-SIZE: 9pt; FONT-FAMILY: Verdana; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+            . Also there is a fifth special zone that fills the center of the host container, and
+            if there are no other docking zones, it consumes all the client area of the host
+            container.<br style="mso-special-character: line-break"/>
+            		<br style="mso-special-character: line-break"/></span>
+            </summary>
+            
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.DragManager">
+            <summary>
+            Gets or sets an instance of drag manager. Drag manager is responsible for
+            dragging functionality.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.EnableDockingGuides">
+            <summary>
+            Gets or sets a boolean value indicating whether the compass should appear while
+            dragging the IDockables.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.AllowFloating">
+            <summary>
+            Gets or sets a value indicating whether floating is allowed. Tool windows cannot
+            float if set to false.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.AllowHiding">
+            <summary>
+            Gets or sets a value indicating whether hiding is allowed or not. Tool windows
+            doesn't hide automatically if set to false.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.AllowDocking">
+            <summary>
+            Gets or sets a value indicating whether docking is allowed. Tool windows cannot
+            be docked if set to false.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.AllowDrag">
+            <summary>
+            Gets or sets a value indicating whether draging is allowed. Tool windows cannot
+            be drag if set to false.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.IsDesignMode">
+            <summary>Gets a value indicating whether the control is at design time or run time.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.ActiveDocument">
+            <summary>
+            Get active document
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.Documents">
+            <summary>
+            Get the collection of all IDockable windows in tabbed document container
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.TdiContextMenuVisible">
+            <summary>
+            Gets or sets whether the tabbed document context menu will be
+            visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.TdiActiveMenuVisible">
+            <summary>
+            Gets or sets whether the tabbed document active dropdown menu will be
+            visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.TdiCloseButtonVisible">
+            <summary>
+            Gets or sets whether the tabbed document close button will be
+            visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.TdiContainerVisible">
+            <summary>
+            Gets or sets whether the tabbed document main container initially will be 
+            visible.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.UseQuickNavigator">
+            <summary>
+            Gets or sets a value indicating whether quickBrowser - a IDockable selection
+            dialog that can be accessed by pressing CTRL+TAB - should appear or not.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockingManager.LayoutSaved">
+            <summary>
+            	Occurs when the docking layout is saved to file
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockingManager.LayoutLoaded">
+            <summary>
+            	Occurs when the docking layout is loaded from file
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.LayoutTree">
+            <summary>
+            Gets or sets a docking manager layout by 
+            string representation of xml file used in LoadXML/SaveXML functions.
+            Internal property. Used for design time issues
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.PrimarySiteComponent">
+            <summary>
+            Used for design time support
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.DockLayout">
+            <summary>
+            Gets or sets a docking manager layout by 
+            string representation of xml file used in LoadXML/SaveXML functions .
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.ThemeName">
+            <summary>Gets or sets theme name.</summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.FixedSplitters">
+            <summary>
+            Gets or sets a value indicating whether dragging is allowed. Tool windows cannot
+            be resizing from splitters if set to false.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.AutoDetectMdiChildForms">
+            <summary>
+            Allows DockingManager to automatically take control of MDI child windows of parent form.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.MdiChildren">
+            <summary>Gets an array of forms that represent the multiple document interface (MDI) child forms that are parented to this docking manager.</summary>
+            <returns>An array of <see cref="T:System.Windows.Forms.Form"></see> objects, each of which identifies one of parent form's MDI child forms.</returns>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.DockingManager.ActiveMdiChild">
+            <summary>Gets the currently active multiple document interface (MDI) child window.</summary>
+            <returns>Returns a <see cref="T:System.Windows.Forms.Form"></see> that represents the currently active MDI child window, or null if there are currently no child windows present.</returns>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="E:Telerik.WinControls.Docking.DockingManager.MdiChildActivate">
+            <summary>Occurs when a multiple document interface (MDI) child form is activated or closed within an MDI application.</summary>
+            <filterpriority>1</filterpriority>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.ResFinder">
+            <exclude/>
+        </member>
+        <member name="T:Telerik.WinControls.Docking.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Docking.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -10,8 +10,26 @@ using UnityEngine.UI;
 /// </summary>
 public class UILoginView : UIWindowViewBase
 {
-
     public override UIWindowCtrl.WindowType CurrentWindowType { get { return UIWindowCtrl.WindowType.Login ; } }
+
+
+    public List<InputField> inputFields = new List<InputField>();
+
+
+    public override void OnAwake()
+    {
+        base.OnAwake();
+
+        InputField[] temps = GetComponentsInChildren<InputField>();
+        for (int i = 0; i < temps.Length; i++)
+        {
+            //用户名 & 密码
+            if (temps[i].name == "username-InputField" || temps[i].name == "password-InputField")
+            {
+                inputFields.Add(temps[i]);
+            }
+        }
+    }
 
     public override void OnBtnClick(GameObject go)
     {

@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class NetWorkHttp : MonoBehaviour {
+public class NetWorkHttp : MonoBehaviour
+{
+    #region 单例
 
     private static NetWorkHttp _instance;
     public static NetWorkHttp Instance
     {
         get
         {
-            if (_instance ==null )
+            if (_instance == null)
             {
                 GameObject network = new GameObject("NetWorkHttp");
                 _instance = network.GetOrCreatComponent<NetWorkHttp>();
@@ -21,12 +23,14 @@ public class NetWorkHttp : MonoBehaviour {
         }
     }
 
+    #endregion
+
+
     /// <summary>
     /// Web事件回调
     /// </summary>
-    private Action<CallBackArgs> OnWebCallBackEvent;
-    private CallBackArgs _callBackArgs;
-
+    private Action<RetValue> OnWebCallBackEvent;
+    private RetValue retValue = new RetValue();  //new一次. 生成RetValue类.
 
     #region 属性
 
@@ -45,11 +49,6 @@ public class NetWorkHttp : MonoBehaviour {
     #endregion
 
 
-    void Start()
-    {
-        //只需new一次.
-        _callBackArgs = new CallBackArgs();
-    }
 
 
     /// <summary>
@@ -59,13 +58,12 @@ public class NetWorkHttp : MonoBehaviour {
     /// <param name="callBackEvent">回调event</param>
     /// <param name="isPost">是否发送</param>
     /// <param name="json">json数据</param>
-    public void SendData(string url,Action<CallBackArgs> callBackEvent , bool isPost = false, string json = "")
+    public void SendData(string url, Action<RetValue> callBackEvent, bool isPost, string json)
     {
         if (_isBusy) { return; }
 
         _isBusy = true;
         OnWebCallBackEvent = callBackEvent;
-
 
         if (isPost)
         {
@@ -95,7 +93,7 @@ public class NetWorkHttp : MonoBehaviour {
     IEnumerator Get(WWW www)
     {
         //等待Web服务器的反应 (等待下载\上传完毕)
-        yield return www;  
+        yield return www;
         _isBusy = false;
 
         //错误信息不为空!(报错！)
@@ -103,18 +101,18 @@ public class NetWorkHttp : MonoBehaviour {
         {
             if (OnWebCallBackEvent != null)
             {
-                _callBackArgs.ErrorInfo = www.error;
-                _callBackArgs.IsError = true;
-                OnWebCallBackEvent(_callBackArgs);
+                retValue.HasError = true;
+                retValue.ErrorMessage = www.error;
+                OnWebCallBackEvent(retValue);
             }
         }
         else
         {
             if (OnWebCallBackEvent != null)
             {
-                _callBackArgs.IsError = false;
-                _callBackArgs.Json = www.text;
-                OnWebCallBackEvent(_callBackArgs);
+                retValue.HasError = false;
+                retValue.ErrorMessage = www.text;
+                OnWebCallBackEvent(retValue);
             }
         }
     }
@@ -122,7 +120,6 @@ public class NetWorkHttp : MonoBehaviour {
 
 
     #endregion
-
 
     #region PostUrl 发送请求
 
@@ -136,7 +133,7 @@ public class NetWorkHttp : MonoBehaviour {
         //创建一个表单
         WWWForm wWWForm = new WWWForm();
         //给表单添加值
-        wWWForm.AddField("jsonData", json);
+        wWWForm.AddField("", json);
 
         WWW www = new WWW(url, wWWForm);
         StartCoroutine(Post(www));
@@ -146,48 +143,49 @@ public class NetWorkHttp : MonoBehaviour {
     {
         yield return www;
         _isBusy = false;
+      
 
-        //错误信息不为空!(报错！)
+        //www出现错误 ()
         if (!string.IsNullOrEmpty(www.error))
         {
-            if (OnWebCallBackEvent != null)
-            {
-                _callBackArgs.ErrorInfo = www.error;
-                _callBackArgs.IsError = true;
-                OnWebCallBackEvent(_callBackArgs);
-            }
+            Debug.LogError("www.text: " + www.text);
         }
         else
         {
+            //由于.事实是: www.error是否为空. 
+            //返回信息都会写在www.text里面.
+            RetValue retTemp = LitJson.JsonMapper.ToObject<RetValue>(www.text);
             if (OnWebCallBackEvent != null)
             {
-                _callBackArgs.IsError = false;
-                _callBackArgs.Json = www.text;
-                OnWebCallBackEvent(_callBackArgs);
+                this.retValue = retTemp;
+                OnWebCallBackEvent(retValue);
             }
         }
+
     }
 
     #endregion
 
 }
 
-public class CallBackArgs
+/// <summary>
+/// 返回值
+/// <para>与webAccount 服务器交互</para>
+/// </summary>
+public class RetValue
 {
-
     /// <summary>
     /// 是否报错
     /// </summary>
-    public bool IsError;
+    public bool HasError;
 
     /// <summary>
     /// 报错信息
     /// </summary>
-    public string ErrorInfo;
+    public string ErrorMessage;
 
     /// <summary>
-    /// json数据信息
+    /// 数据信息
     /// </summary>
-    public string Json;
-
+    public object Value;
 }

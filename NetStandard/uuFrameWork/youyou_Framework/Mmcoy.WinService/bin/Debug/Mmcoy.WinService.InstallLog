@@ -1,0 +1,34 @@
+﻿正在安装程序集“F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.InstallLog
+   assemblypath = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe
+正在安装服务 U3DOLService...
+正在日志 Application 中创建 EventLog 源 U3DOLService...
+正在回滚程序集“F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.InstallLog
+   assemblypath = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe
+正在将事件日志还原到源 U3DOLService 的前一状态。
+正在安装程序集“F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.InstallLog
+   assemblypath = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe
+正在安装服务 U3DOLService...
+已成功安装服务 U3DOLService。
+正在日志 Application 中创建 EventLog 源 U3DOLService...
+正在提交程序集“F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.InstallLog
+   assemblypath = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe
+正在卸载程序集“F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe”。
+受影响的参数是:
+   logtoconsole = 
+   logfile = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.InstallLog
+   assemblypath = F:\U3dOL\Code\Framework\Mmcoy.WinService\bin\Debug\Mmcoy.WinService.exe
+正在移除 EventLog 源 U3DOLService。
+正在从系统中移除服务 U3DOLService...
+已成功地从系统中移除服务 U3DOLService。

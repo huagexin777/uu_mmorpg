@@ -1,0 +1,8 @@
+C:\Users\76489\source\repos\AppConfigurtaionServices\bin\Debug\netcoreapp3.1\AppConfigurtaionServices.deps.json
+C:\Users\76489\source\repos\AppConfigurtaionServices\bin\Debug\netcoreapp3.1\AppConfigurtaionServices.dll
+C:\Users\76489\source\repos\AppConfigurtaionServices\obj\Debug\netcoreapp3.1\AppConfigurtaionServices.csprojAssemblyReference.cache
+C:\Users\76489\source\repos\AppConfigurtaionServices\obj\Debug\netcoreapp3.1\AppConfigurtaionServices.AssemblyInfoInputs.cache
+C:\Users\76489\source\repos\AppConfigurtaionServices\obj\Debug\netcoreapp3.1\AppConfigurtaionServices.AssemblyInfo.cs
+C:\Users\76489\source\repos\AppConfigurtaionServices\bin\Debug\netcoreapp3.1\AppConfigurtaionServices.pdb
+C:\Users\76489\source\repos\AppConfigurtaionServices\obj\Debug\netcoreapp3.1\AppConfigurtaionServices.dll
+C:\Users\76489\source\repos\AppConfigurtaionServices\obj\Debug\netcoreapp3.1\AppConfigurtaionServices.pdb

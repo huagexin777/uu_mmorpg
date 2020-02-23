@@ -1,0 +1,5 @@
+这个文件夹下是.类库工程
+
+AppConfigurtaionServices 这个类库.是为了方便配置 [.net core] 读取配置(json)文件而创建.
+
+uuFrameWork 这个是uu教程dll

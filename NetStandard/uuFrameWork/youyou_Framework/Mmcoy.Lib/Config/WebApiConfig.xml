@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WebApiConfig>
+  <Projects>
+    <Project>
+      <ProjectName>NSys</ProjectName>
+      <DomainName>nsys.gongkong.com</DomainName>
+      <Apis>
+        <Api ApiName="SysUserApi" Url="http://nsys.gongkong.com/api/SysUserApi/"/>
+        <Api ApiName="SysLogApi" Url="http://nsys.gongkong.com/api/SysLogApi/"/>
+      </Apis>
+    </Project>
+    <Project>
+      <ProjectName>NRegUser</ProjectName>
+      <DomainName>nuser.gongkong.com</DomainName>
+      <Apis>
+        <Api ApiName="RegUser" Url="http://nuser.gongkong.com/api/reguserapi/"/>
+      </Apis>
+    </Project>
+  </Projects>
+</WebApiConfig>

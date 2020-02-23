@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RootConfig>
+  <!--
+  Id：编号
+  Name：名称
+  IsOnce：是否只运行一次
+  Interval：运行时间间隔（秒）
+  IsAppointTime：是否在指定时间运行
+  AppointTime：指定时间 例：01:00:00
+  Enabled：是否可用
+  AssemblyString：程序集名称
+  TypeName：类全名称
+  Description：描述
+  -->
+  <WinServiceConfig Id="NewsIndex" Name="NewsIndex" IsOnce="True" Interval="10800" IsAppointTime="False" AppointTime="01:00:00" Enabled="True" AssemblyString="Tgbus.LuceneNet.Framework" TypeName="Tgbus.LuceneNet.Framework.NewsWinService" Description="创建各种新闻类索引" />
+</RootConfig>

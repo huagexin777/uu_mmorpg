@@ -1,0 +1,400 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.WinControls.UI.Design</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.WinControls.UI.Design.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.RadCalendarEditor">
+            <summary>
+            The editor for the RadTreeView items.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.CarouselPathPointGlyph.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Provides hit test logic.
+            </summary>
+            
+            <returns>
+            A <see cref="T:System.Windows.Forms.Cursor"></see> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph"></see> is associated with p; otherwise, null.
+            </returns>
+            
+            <param name="p">A point to hit-test.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.CarouselPathPointGlyph.Paint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Provides paint logic.
+            </summary>
+            
+            <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs"></see> that contains the event data. </param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.CarouselPathPointGlyph.DisposeResources">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+            <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.CarouselPathPreviewSettings.OnPropertyChanged(System.String)">
+            <summary>
+            Raises the PropertyChanged event
+            </summary>
+            <param name="propertyName">The name of the property</param>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Design.CarouselPathPreviewSettings.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+            
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.AdvancedLayoutDesignerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.AdvancedLayoutDesignerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.AdvancedLayoutDesignerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.AdvancedSettings.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.AdvancedSettings.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.AdvancedSettings.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.DragItemEventHandler">
+            <summary>
+                Represents the method that will handle the following events:
+                <see cref="!:CollapsiblePaneElement.ItemDragStarting">ItemDragStarting</see>,
+                <see cref="!:CollapsiblePaneElement.ItemDragStarted">ItemDragStarted</see>
+            </summary>
+            <param name="sender">Represents the event sender.</param>
+            <param name="args">Represents the <see cref="T:Telerik.WinControls.UI.Design.DragItemEventArgs">event arguments</see>.</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.DragItemEndEventHandler">
+            <summary>
+                Represents the method that will handle the following events:
+                <see cref="!:CollapsiblePaneElement.DagItemEnding">DagItemEnding</see>,
+                <see cref="!:CollapsiblePaneElement.DagItemEnded">DagItemEnded</see>
+            </summary>
+            <param name="sender">Represents the event sender.</param>
+            <param name="args">Represents the <see cref="T:Telerik.WinControls.UI.Design.DragItemEndEventArgs">event arguments</see>.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Telerik.WinControls.UI.Design.CollapsiblePaneElement.OnDragItemStarting(Telerik.WinControls.UI.Design.DragItemEventArgs)" -->
+        <!-- Badly formed XML comment ignored for member "M:Telerik.WinControls.UI.Design.CollapsiblePaneElement.OnDragItemStarted(Telerik.WinControls.UI.Design.DragItemEventArgs)" -->
+        <member name="M:Telerik.WinControls.UI.Design.CollapsiblePaneElement.OnDragItemEnding(Telerik.WinControls.UI.Design.DragItemEndEventArgs)">
+            <summary>
+            	Raises the <see cref="E:Telerik.WinControls.UI.Design.CollapsiblePaneElement.DragItemEnding"/> event.
+            </summary>
+            <param name="args">An <see cref="T:Telerik.WinControls.UI.Design.DragItemEndEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.CollapsiblePaneElement.OnDragItemEnded(Telerik.WinControls.UI.Design.DragItemEndEventArgs)">
+            <summary>
+            	Raises the <see cref="E:Telerik.WinControls.UI.Design.CollapsiblePaneElement.DragItemEnded"/> event.
+            </summary>
+            <param name="args">An <see cref="T:Telerik.WinControls.UI.Design.DragItemEndEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.CollapsiblePaneElement.AllowDragDrop">
+            <summary>
+            	Gets or sets a value indicating whether the drag and drop functionality 
+                of the TabStrip element is allowed.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Design.CollapsiblePaneElement.DragItemStarting">
+            <summary>
+            	Occurs when the user starts dragging a tab item. The event occurs just before the appearance of the dragged item as a floating element.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Design.CollapsiblePaneElement.DragItemStarted">
+            <summary>
+            	Occurs when the user starts dragging a tab item. The event occurs just after the appearance of the dragged item as a floating element.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Design.CollapsiblePaneElement.DragItemEnding">
+            <summary>
+            	Occurs when the user ends dragging a tab item. The event occurs just before the tab item is positioned on its new place.
+            </summary>
+        </member>
+        <member name="E:Telerik.WinControls.UI.Design.CollapsiblePaneElement.DragItemEnded">
+            <summary>
+            	Occurs when the user ends dragging a tab item. The event occurs just after the tab item is positioned on its new place.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.GeneralColumnSettings.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.GeneralColumnSettings.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.GeneralColumnSettings.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.DragItemEventArgs">
+            <summary>
+                Represents event data for the following events:
+                <see cref="E:Telerik.WinControls.UI.RadTabStripElement.TabDragStarted">DragItemStarted</see>,
+                <see cref="E:Telerik.WinControls.UI.RadTabStripElement.TabDragStarting">DragItemStarting</see>
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.DragItemEventArgs.#ctor(Telerik.WinControls.RadElement)">
+            <summary>
+            Initializes a new instance of the TabEventArgs class using the 
+            affected item.
+            </summary>
+            <param name="tabItem"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.DragItemEventArgs.DraggedItem">
+            <summary>
+            Gets the affected item.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.DragItemEndEventArgs">
+            <summary>
+                Represents event data for the following events:
+                <see cref="E:Telerik.WinControls.UI.RadTabStripElement.TabDragEnding">DragItemEnding</see> and
+                <see cref="E:Telerik.WinControls.UI.RadTabStripElement.TabDragEnded">DragItemEnded</see>.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.DragItemEndEventArgs.#ctor(Telerik.WinControls.RadElement,Telerik.WinControls.RadElement)">
+            <summary>
+            Initializes a new instance of the TabDragEndEventArgs class using the 
+            affected item and the replaced item.
+            </summary>
+            <param name="draggedItem"></param>
+            /// <param name="replacedItem"></param>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.DragItemEndEventArgs.DraggedItem">
+            <summary>
+            Gets the affected item.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.DragItemEndEventArgs.ReplacedItem">
+            <summary>
+            Gets the replaced item.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.GeneralGridSettings.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.GeneralGridSettings.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.GeneralGridSettings.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.SchemaNodeInfo.Caption">
+            <summary>
+            Gets or sets the text representing the name of the GridViewTemplate 
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.SchemaNodeInfo.Columns">
+            <summary>
+            Gets or sets the collection with the columns for GridViewTemplate
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.SchemaNodeInfo.ChildRelations">
+            <summary>
+            Gets or sets the collection with the relations to child views for GridViewTemplate
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.SchemaNodeInfo.HasChildren">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.SchemaNodeInfo.List">
+            <summary>
+            Gets or sets the corresponding table of the SchemaNodeInfo
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Design.SchemaNodeInfo.Nodes">
+            <summary>
+            Gets or sets array with child nodes representing the child views
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.RadGridViewPropertyBuilder">
+            <summary>
+            This class represents the Property Builder form 
+            intended to facilitate managing settings of RadGridView at design-time
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.RadGridViewPropertyBuilder.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadGridViewPropertyBuilder.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadGridViewPropertyBuilder.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.SaveLayout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.SaveLayout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.SaveLayout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.GeneralViewSettings.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.GeneralViewSettings.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.GeneralViewSettings.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.ExpertModePanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ExpertModePanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.ExpertModePanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.NodePropertiesPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.NodePropertiesPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.NodePropertiesPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Design.RadTreeViewEditor">
+            <summary>
+            The editor for the RadTreeView items.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.RadTreeViewPropertiesPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadTreeViewPropertiesPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.RadTreeViewPropertiesPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Design.TreeViewEditorForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.TreeViewEditorForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.TreeViewEditorForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Design.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

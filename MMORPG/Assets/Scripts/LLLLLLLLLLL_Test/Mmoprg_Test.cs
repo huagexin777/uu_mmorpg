@@ -12,7 +12,7 @@ public class Mmoprg_Test : MonoBehaviour
 
         #region 测试 Web服务器连接
 
-        NetWorkHttp.Instance.SendData(GlobalInit.HttpIPAdress +"?id=1", GetWebEvent);
+        //NetWorkHttp.Instance.SendData(GlobalInit.HttpIPAdress +"?id=1", GetWebEvent);
 
         #endregion
 
@@ -56,24 +56,24 @@ public class Mmoprg_Test : MonoBehaviour
 
     }
 
-    private void GetWebEvent(CallBackArgs obj)
+    private void GetWebEvent(RetValue obj)
     {
-        if (obj.IsError)
-        {
-            Debug.LogError("Web错误信息: " + obj.ErrorInfo);
-        }
+        //if (obj.HasError)
+        //{
+        //    Debug.LogError("Web错误信息: " + obj.ErrorMessage);
+        //}
 
-        try
-        {
-            AccountEntity account = JsonMapper.ToObject<AccountEntity>(obj.Json);
+        //try
+        //{
+        //    AccountEntity account = JsonMapper.ToObject<AccountEntity>(obj.Value);
 
-            Debug.LogError(account.ToString());
-        }
-        catch (Exception e)
-        {
-            Debug.LogError("反序列化的时候,出现错误: " + e );
-            throw;
-        }
+        //    Debug.LogError(account.ToString());
+        //}
+        //catch (Exception e)
+        //{
+        //    Debug.LogError("反序列化的时候,出现错误: " + e );
+        //    throw;
+        //}
     }
 
 

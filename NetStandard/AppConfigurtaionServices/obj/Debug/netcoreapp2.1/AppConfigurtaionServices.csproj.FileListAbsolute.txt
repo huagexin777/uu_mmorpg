@@ -1,0 +1,8 @@
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\bin\Debug\netcoreapp2.1\AppConfigurtaionServices.deps.json
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\bin\Debug\netcoreapp2.1\AppConfigurtaionServices.dll
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\bin\Debug\netcoreapp2.1\AppConfigurtaionServices.pdb
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\obj\Debug\netcoreapp2.1\AppConfigurtaionServices.csprojAssemblyReference.cache
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\obj\Debug\netcoreapp2.1\AppConfigurtaionServices.AssemblyInfoInputs.cache
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\obj\Debug\netcoreapp2.1\AppConfigurtaionServices.AssemblyInfo.cs
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\obj\Debug\netcoreapp2.1\AppConfigurtaionServices.dll
+E:\Unity3D\Program\uu_mmorpg\NetStandard\AppConfigurtaionServices\obj\Debug\netcoreapp2.1\AppConfigurtaionServices.pdb
