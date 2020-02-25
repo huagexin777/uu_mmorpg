@@ -30,6 +30,10 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         /// 角色信息表
         /// </summary>
         RoleInfoList,
+        /// <summary>
+        /// 消息框
+        /// </summary>
+        Message,
 
     }
 
@@ -82,16 +86,19 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         switch (type)
         {
             case WindowType.Login:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "LoginWindow", isChash:true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "LoginWindow", isCache:true);
                 break;
             case WindowType.Register:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isCache: true);
                 break;
             case WindowType.ServerList:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "ServerListWindow", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "ServerListWindow", isCache: true);
                 break;
             case WindowType.RoleInfoList:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isCache: true);
+                break;
+            case WindowType.Message:
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "MessageWindow", isCache: true);
                 break;
         }
 
@@ -138,16 +145,19 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         switch (type)
         {
             case WindowType.Login:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "LoginWindow", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "LoginWindow", isCache: true);
                 break;
             case WindowType.Register:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isCache: true);
                 break;
             case WindowType.ServerList:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "ServerListWindow", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "ServerListWindow", isCache: true);
                 break;
             case WindowType.RoleInfoList:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isChash: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isCache: true);
+                break;
+            case WindowType.Message:
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "MessageWindow", isCache: true);
                 break;
         }
 

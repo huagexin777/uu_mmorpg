@@ -55,7 +55,7 @@ public class UIWindowViewBase : UIViewBase
     /// <summary>
     /// 当前窗体类型
     /// </summary>
-    public virtual UIWindowCtrl.WindowType CurrentWindowType { get; }
+    public virtual UIWindowCtrl.WindowType CurrentWindowType { set; get; }
     
     /// <summary>
     /// 打开窗口
@@ -69,6 +69,11 @@ public class UIWindowViewBase : UIViewBase
     /// </summary>
     public virtual void Close()
     {
-        
+        UIWindowCtrl.Instance.CloseWindow(CurrentWindowType);
+
+        if (OnCloseBeforeViewEvent != null)
+        {
+            OnCloseBeforeViewEvent(CurrentWindowType);
+        }
     }
 }

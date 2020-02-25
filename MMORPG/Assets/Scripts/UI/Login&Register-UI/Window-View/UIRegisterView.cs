@@ -8,6 +8,11 @@ using UnityEngine.UI;
 /// </summary>
 public class UIRegisterView : UIWindowViewBase
 {
+    private UIWindowCtrl.WindowType currentWindowType;
+    public override UIWindowCtrl.WindowType CurrentWindowType 
+    {
+        get { return UIWindowCtrl.WindowType.Register; }
+    }
 
     public List<InputField> inputFields = new List<InputField>();//[HideInInspector]
 
@@ -25,8 +30,6 @@ public class UIRegisterView : UIWindowViewBase
             }
         }
     }
-
-    public override UIWindowCtrl.WindowType CurrentWindowType { get { return UIWindowCtrl.WindowType.Register; } }
 
     public override void OnBtnClick(GameObject go)
     {
@@ -54,13 +57,6 @@ public class UIRegisterView : UIWindowViewBase
     public override void Close()
     {
         base.Close();
-
-        UIWindowCtrl.Instance.CloseWindow(CurrentWindowType);
-
-        if (OnCloseBeforeViewEvent != null)
-        {
-            OnCloseBeforeViewEvent(CurrentWindowType);
-        }
     }
 
 

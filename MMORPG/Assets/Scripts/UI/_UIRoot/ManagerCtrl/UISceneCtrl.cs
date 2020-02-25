@@ -42,14 +42,14 @@ public class UISceneCtrl : Singleton<UISceneCtrl>
         switch (type)
         {
             case SceneType.Logon:
-                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "UIRoot_Login&Register", isChash: false);
+                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "UIRoot_Login&Register", isCache: false);
                 currentSceneUI = go.GetComponentInChildren<UISceneLogOnView>();
                 break;
             case SceneType.Loading:
-                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "RegisterWindow", isChash: false);
+                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "RegisterWindow", isCache: false);
                 break;
             case SceneType.MainCity:
-                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "ServerListWindow", isChash: false);
+                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "ServerListWindow", isCache: false);
                 break;
         }
        

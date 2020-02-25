@@ -7,7 +7,7 @@ using LitJson;
 /// <summary>
 /// 账号管理Ctrl
 /// </summary>
-public class AccountCtrl : Singleton<AccountCtrl>
+public class AccountCtrl : SystemCtrlBase<AccountCtrl>
 {
     private UILoginView ui_loginView;
 
@@ -17,12 +17,12 @@ public class AccountCtrl : Singleton<AccountCtrl>
     public AccountCtrl()
     {
         //登录视图
-        UIDispatcher.Instance.AddBtnEventListener(ConstDefine.UILoginView_LoginBtn, OnBtnLoginClick);
-        UIDispatcher.Instance.AddBtnEventListener(ConstDefine.UILoginView_GoToRegisterBtn, OnBtnGoToRegisterClick);
+        AddBtnEventListener(ConstDefine.UILoginView_LoginBtn, OnBtnLoginClick);
+        AddBtnEventListener(ConstDefine.UILoginView_GoToRegisterBtn, OnBtnGoToRegisterClick);
 
         //注册视图
-        UIDispatcher.Instance.AddBtnEventListener(ConstDefine.UIRegisterView_RegisterBtn, OnBtnRegisterClick);
-        UIDispatcher.Instance.AddBtnEventListener(ConstDefine.UIRegisterView_BackBtn, OnBtnBackClick);
+        AddBtnEventListener(ConstDefine.UIRegisterView_RegisterBtn, OnBtnRegisterClick);
+        AddBtnEventListener(ConstDefine.UIRegisterView_BackBtn, OnBtnBackClick);
     }
 
 
@@ -95,11 +95,10 @@ public class AccountCtrl : Singleton<AccountCtrl>
         dict["username"] = username;
         dict["password"] = password;
         dict["channelId"] = channelId;
-        if (string.IsNullOrEmpty(username)) { Debug.LogError("用户名不能为空!"); return; }
-        if (string.IsNullOrEmpty(password)) { Debug.LogError("密码不能为空!"); return; }
+        if (string.IsNullOrEmpty(username)) { Show("消息","用户名不能为空!"); return; }
+        if (string.IsNullOrEmpty(password)) { Show("消息", "密码不能为空!"); return; }
 
-        string json = JsonMapper.ToJson(dict);
-        NetWorkHttp.Instance.SendData(GlobalInit.HttpIPAdress + "api/account", OnLoginBackEvent, true, json);
+        NetWorkHttp.Instance.SendData(GlobalInit.HttpIPAdress + "api/account", OnLoginBackEvent, true, dict);
     }
 
     /// <summary>
@@ -109,11 +108,11 @@ public class AccountCtrl : Singleton<AccountCtrl>
     {
         if (obj.HasError)
         {
-            Debug.LogError("登录失败!\n message:" + obj.ErrorMessage + "\t value:" + obj.Value);
+            Show("消息","登录失败!\n message:" + obj.ErrorMessage + "\t value:" + obj.Value);
         }
         else
         {
-            Debug.LogError("登录成功!\n message:" + obj.ErrorMessage + "\t value:" + obj.Value);
+            Show("消息", "登录成功!");
         }
     }
 
@@ -141,13 +140,12 @@ public class AccountCtrl : Singleton<AccountCtrl>
         dict["password"] = password;
         dict["channelId"] = channelId;
 
-        if (string.IsNullOrEmpty(username)) { Debug.LogError("用户名不能为空!"); return; }
-        if (string.IsNullOrEmpty(password)) { Debug.LogError("密码不能为空!"); return; }
-        if (string.IsNullOrEmpty(repassword)) { Debug.LogError("重新输入的密码不能为空!"); return; }
-        if (password != repassword) { Debug.LogError("两次输入的密码不一致!"); return; }
+        if (string.IsNullOrEmpty(username)) { Show("消息","用户名不能为空!"); return; }
+        if (string.IsNullOrEmpty(password)) { Show("消息", "密码不能为空!"); return; }
+        if (string.IsNullOrEmpty(repassword)) { Show("消息", "重新输入的密码不能为空!"); return; }
+        if (password != repassword) { Show("消息", "两次输入的密码不一致!"); return; }
 
-        string json = JsonMapper.ToJson(dict);
-        NetWorkHttp.Instance.SendData(GlobalInit.HttpIPAdress + "api/account", OnRegisterBackEvent, true, json);
+        NetWorkHttp.Instance.SendData(GlobalInit.HttpIPAdress + "api/account", OnRegisterBackEvent, true, dict);
     }
 
     /// <summary>
@@ -157,14 +155,14 @@ public class AccountCtrl : Singleton<AccountCtrl>
     {
         if (args.HasError)
         {
-            Debug.LogError("注册失败!\n message:" + args.ErrorMessage + "\t value:" + args.Value);
+            Show("消息", "注册失败!\n message:" + args.ErrorMessage + "\t value:" + args.Value);
         }
         else
         {
             //返回登录界面
             OpenLogonView();
             ui_registerView.Close();
-            Debug.LogError("注册成功!");
+            Show("消息", "注册成功!");
         }
     }
 
@@ -188,7 +186,7 @@ public class AccountCtrl : Singleton<AccountCtrl>
     public override void Dispose()
     {
         base.Dispose();
-        UIDispatcher.Instance.RemoveBtnEventListener("UILoginView_LoginBtn", OnBtnLoginClick);
+        RemoveBtnEventListener("UILoginView_LoginBtn", OnBtnLoginClick);
     }
 
 }

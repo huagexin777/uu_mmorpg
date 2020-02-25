@@ -47,9 +47,9 @@ public class ResourcesMgr : Singleton<ResourcesMgr>
     /// </summary>
     /// <param name="type">资源类型</param>
     /// <param name="path">资源路径</param>
-    /// <param name="isChash">是否从缓存中加载</param>
+    /// <param name="isCache">是否从缓存中加载</param>
     /// <returns></returns>
-    public GameObject Load(ResourcesType type, string path, bool isChash = false)
+    public GameObject Load(ResourcesType type, string path, bool isCache = false)
     {
         StringBuilder sb = new StringBuilder();
         switch (type)
@@ -74,7 +74,7 @@ public class ResourcesMgr : Singleton<ResourcesMgr>
 
         GameObject obj = null;
         //从缓存中加载
-        if (isChash)
+        if (isCache)
         {
             if (hashtablePref.ContainsKey(sb.ToString()))
             {

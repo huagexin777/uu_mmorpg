@@ -10,7 +10,12 @@ using UnityEngine.UI;
 /// </summary>
 public class UILoginView : UIWindowViewBase
 {
-    public override UIWindowCtrl.WindowType CurrentWindowType { get { return UIWindowCtrl.WindowType.Login ; } }
+
+    private UIWindowCtrl.WindowType currentWindowType;
+    public override UIWindowCtrl.WindowType CurrentWindowType 
+    {
+        get { return UIWindowCtrl.WindowType.Login; }
+    }
 
 
     public List<InputField> inputFields = new List<InputField>();
@@ -57,13 +62,6 @@ public class UILoginView : UIWindowViewBase
     public override void Close()
     {
         base.Close();
-
-        UIWindowCtrl.Instance.CloseWindow(CurrentWindowType);
-
-        if (OnCloseBeforeViewEvent != null)
-        {
-            OnCloseBeforeViewEvent(CurrentWindowType);
-        }
     }
 
 }

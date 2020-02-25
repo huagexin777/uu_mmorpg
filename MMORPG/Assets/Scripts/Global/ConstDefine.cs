@@ -21,4 +21,10 @@ public class ConstDefine
     /// 注册视图|Key=返回按钮
     /// </summary>
     public const string UIRegisterView_BackBtn = "UIRegisterView_BackBtn";
+
+
+    /// <summary>|Key==确定按钮
+    /// 消息框视图
+    /// </summary>
+    public const string UIMessageView_EnsureBtn = "UIMessageView_EnsureBtn";
 }
