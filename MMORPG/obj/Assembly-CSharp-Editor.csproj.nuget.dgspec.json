@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-Editor.csproj": {}
+  },
+  "projects": {
+    "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-Editor.csproj",
+        "projectName": "Assembly-CSharp-Editor",
+        "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-Editor.csproj",
+        "packagesPath": "C:\\Users\\76489\\.nuget\\packages\\",
+        "outputPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\76489\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {
+              "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj": {
+                "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj"
+              },
+              "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj": {
+                "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "dependencies": {
+            "ToString.Fody": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj",
+        "projectName": "Assembly-CSharp-firstpass",
+        "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj",
+        "packagesPath": "C:\\Users\\76489\\.nuget\\packages\\",
+        "outputPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\76489\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "dependencies": {
+            "ToString.Fody": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj",
+        "projectName": "Assembly-CSharp",
+        "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj",
+        "packagesPath": "C:\\Users\\76489\\.nuget\\packages\\",
+        "outputPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\76489\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net471"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net471": {
+            "projectReferences": {
+              "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj": {
+                "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp-firstpass.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net471": {
+          "dependencies": {
+            "ToString.Fody": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

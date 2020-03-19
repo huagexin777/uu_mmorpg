@@ -239,7 +239,7 @@ public class MMO_MemoryStream : MemoryStream
         //C#是用的Unicode编码，变量可以是汉字，所以一个字符占2个字节
 
         byte[] arr = Encoding.UTF8.GetBytes(str);
-        Debug.Log(arr.Length);
+        //Debug.Log(arr.Length);
         if (arr.Length > 65535)
         {
             throw new InvalidCastException("字符串超出范围!");

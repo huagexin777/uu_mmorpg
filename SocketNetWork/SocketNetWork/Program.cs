@@ -15,82 +15,48 @@ namespace SocketNetWork
         private static Socket clientSocket;
 
 
-        static void Main(string[] args)
-        {
-            //
-            ServerSocket server = new ServerSocket("127.0.0.1", 6666);
-            server.Start();
 
-            //1.创建socket对象
-            serverSocket = new Socket(AddressFamily.InterNetworkV6, SocketType.Stream, ProtocolType.Tcp);
-            //2.设置监听数 (排队挂起人数)
+        private const string IP = "127.0.0.1";
+        private static int Port = 1001;
+
+        static void Main(string[] args)
+        { 
+            Console.WriteLine("开启服务器,端口:{0}, 时间:{1}",Port,DateTime.Now);
+
+            //创建,Server-Socket
+            serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            //绑定 IP、Port
+            serverSocket.Bind(new IPEndPoint(IPAddress.Parse(IP), Port));
+            //设置最多排队3000连接请求
             serverSocket.Listen(3000);
-            //3.绑定ip地址.
-            IPEndPoint ip = new IPEndPoint(IPAddress.Parse("192.168.0.116"), 6666);
-            serverSocket.Bind(ip);
-            //4.异步监听连接
+
+            //开启异步接收
             serverSocket.BeginAccept(AcceptCallBack, serverSocket);
 
+            Console.ReadKey();
         }
 
-        static Tool.Meassage msg = new Tool.Meassage();
+        /// <summary>
+        /// 初始化所有Contoller
+        /// </summary>
+        static void InitAllController()
+        {
+            RoleController.Instance.Init();
+        }
 
         /// <summary>
-        /// 建立(客户端的)连接
+        /// 与(客户端)异步连接
         /// </summary>
-        /// <param name="ar"></param>
         static void AcceptCallBack(IAsyncResult ar)
         {
             clientSocket = serverSocket.EndAccept(ar);
+            Console.WriteLine("客户端已经连接,监听到远端IP{0}: ", clientSocket.RemoteEndPoint.ToString());
 
-            //向客户端发送一条消息.
-            byte[] data = System.Text.Encoding.UTF8.GetBytes("客户端已经连接过来了,远端ip地址是: " + clientSocket.RemoteEndPoint.ToString());
-            clientSocket.Send(data);
-
-            //客户端,【持续接收】信息传递.
-            clientSocket.BeginReceive(msg.Data, msg.StartIndex, msg.RemainSize, SocketFlags.None,ReceiveClientCallBack, clientSocket);
+            //创建client
+            Client client = new Client(clientSocket);
+            client.Start();
 
             serverSocket.BeginAccept(AcceptCallBack, serverSocket);
-        }
-
-
-        /// <summary>
-        /// 接收(客户端的)信息传递
-        /// </summary>
-        /// <param name="ar"></param>
-        static void ReceiveClientCallBack(IAsyncResult ar)
-        {
-            try
-            {
-                while (true)
-                {
-                    int length = clientSocket.EndReceive(ar);
-                    //length > 0 属于正常接收到了数据,
-                    if (length > 0)
-                    {
-                        msg.AddCount(length);
-                        msg.ReadMessage();
-                        //客户端,【持续接收】信息传递.
-                        clientSocket.BeginReceive(msg.Data, msg.StartIndex, msg.RemainSize, SocketFlags.None, ReceiveClientCallBack, clientSocket);
-                    }
-                    //length <= 0 属于客户端自己断开了连接.
-                    else
-                    {
-                        clientSocket.Close();
-                        return;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                //属于,客户端出现了.应用程序卡死或者进程崩溃！
-                Console.WriteLine(e);
-                if (clientSocket != null)
-                {
-                    clientSocket.Close();
-                }
-                throw;
-            }
         }
 
     }

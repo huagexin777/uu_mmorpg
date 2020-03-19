@@ -11,7 +11,6 @@ using UnityEngine.UI;
 public class UILoginView : UIWindowViewBase
 {
 
-    private UIWindowCtrl.WindowType currentWindowType;
     public override UIWindowCtrl.WindowType CurrentWindowType 
     {
         get { return UIWindowCtrl.WindowType.Login; }

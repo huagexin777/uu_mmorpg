@@ -23,10 +23,6 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         /// </summary>
         Register,
         /// <summary>
-        /// 服务器列表
-        /// </summary>
-        ServerList,
-        /// <summary>
         /// 角色信息表
         /// </summary>
         RoleInfoList,
@@ -34,6 +30,14 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         /// 消息框
         /// </summary>
         Message,
+        /// <summary>
+        /// 区服入口
+        /// </summary>
+        GameServerEnter,
+        /// <summary>
+        /// 游戏服务器
+        /// </summary>
+        GameServer,
 
     }
 
@@ -91,14 +95,17 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
             case WindowType.Register:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isCache: true);
                 break;
-            case WindowType.ServerList:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "ServerListWindow", isCache: true);
-                break;
             case WindowType.RoleInfoList:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isCache: true);
                 break;
             case WindowType.Message:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "MessageWindow", isCache: true);
+                break;
+            case WindowType.GameServerEnter:
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServerEnter", isCache: true);
+                break;
+            case WindowType.GameServer:
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServer", isCache: true);
                 break;
         }
 
@@ -150,14 +157,17 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
             case WindowType.Register:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isCache: true);
                 break;
-            case WindowType.ServerList:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "ServerListWindow", isCache: true);
-                break;
             case WindowType.RoleInfoList:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isCache: true);
                 break;
             case WindowType.Message:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "MessageWindow", isCache: true);
+                break;
+            case WindowType.GameServerEnter:
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServerEnter", isCache: true);
+                break;
+            case WindowType.GameServer:
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServer", isCache: true);
                 break;
         }
 

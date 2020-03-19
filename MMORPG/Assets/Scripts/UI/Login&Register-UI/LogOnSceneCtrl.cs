@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// 启动场景-脚本
@@ -19,6 +20,8 @@ public class LogOnSceneCtrl : MonoBehaviour
         //{
         //    Debug.LogError("名称: " + jobEntities[i].Name);
         //}
+
+        
     }
 
     

@@ -50,7 +50,6 @@ public class NetWorkHttp : MonoBehaviour
 
 
 
-
     /// <summary>
     /// 发送数据
     /// </summary>
@@ -60,6 +59,10 @@ public class NetWorkHttp : MonoBehaviour
     /// <param name="json">json数据</param>
     public void SendData(string url, Action<RetValue> callBackEvent, bool isPost,Dictionary<string,object> dict)
     {
+        string constIp = GlobalInit.HttpIPAdress;
+        constIp += url;
+        url = constIp;
+
         if (_isBusy) { return; }
 
         _isBusy = true;
@@ -141,16 +144,23 @@ public class NetWorkHttp : MonoBehaviour
     #region PostUrl 发送请求
 
     /// <summary>
+    /// 测试用的
+    /// </summary>
+    string sendJson = "";
+
+    /// <summary>
     /// PostUrl请求
     /// </summary>
     /// <param name="url"></param>
     /// <param name="json"></param>
     void PostUrl(string url, string json)
     {
+        this.sendJson = "";
         //创建一个表单
         WWWForm wWWForm = new WWWForm();
         //给表单添加值
         wWWForm.AddField("", json);
+        this.sendJson = json;
 
         WWW www = new WWW(url, wWWForm);
         StartCoroutine(Post(www));
@@ -158,6 +168,7 @@ public class NetWorkHttp : MonoBehaviour
 
     IEnumerator Post(WWW www)
     {
+        //Debug.Log("开启post");
         yield return www;
         _isBusy = false;
       
@@ -165,6 +176,7 @@ public class NetWorkHttp : MonoBehaviour
         //www出现错误 ()
         if (!string.IsNullOrEmpty(www.error))
         {
+            Debug.LogError("sendJson: " + sendJson);
             Debug.LogError("www.text: " + www.text);
         }
         else

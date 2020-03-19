@@ -7,9 +7,17 @@ using System.Threading.Tasks;
 
 namespace SocketNetWork
 {
-    class Role
+    public class Role
     {
-        
+        /// <summary>
+        /// clientSocket
+        /// </summary>
+        public Client client;
+
+        public Role(Client c)
+        {
+            this.client = c;
+        }
 
     }
 }

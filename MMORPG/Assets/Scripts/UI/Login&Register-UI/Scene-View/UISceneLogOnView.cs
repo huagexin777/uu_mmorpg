@@ -1,14 +1,19 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class UISceneLogOnView : UISceneViewBase
 {
     public override void OnStart()
     {
-        //旧方法
-        ////默认生成-LoginWindow
-        //GameObject go = UIWindowCtrl.Instance.OpenWindow(WindowType);
+        StartCoroutine(Wait2QuitLogin());
+    }
 
-        AccountCtrl.Instance.OpenLogonView();
+    IEnumerator Wait2QuitLogin() 
+    {
+        AccountCtrl.Instance.OpenLogonView(false);
+        yield return new WaitForSeconds(1);
+        //直接进入快速登录
+        AccountCtrl.Instance.QuitLoginOn();
     }
     
 }

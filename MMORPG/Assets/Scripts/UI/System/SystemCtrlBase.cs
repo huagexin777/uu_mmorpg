@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UIWindowCtrl;
 
-public class SystemCtrlBase<T> : IDisposable where T : new()
+public class SystemCtrlBase<T> : IDisposable, ISystemCtrl where T : new()
 {
     #region µ¥Àý
 
@@ -24,7 +25,6 @@ public class SystemCtrlBase<T> : IDisposable where T : new()
     #endregion
 
 
-
     protected virtual void Show(string title, string msg)
     {
         MessageCtrl.Instance.Show(title, msg);
@@ -40,9 +40,14 @@ public class SystemCtrlBase<T> : IDisposable where T : new()
     }
 
 
+
     public virtual void Dispose()
     {
 
     }
 
+    public virtual void OpenView(WindowType type)
+    {
+        
+    }
 }
