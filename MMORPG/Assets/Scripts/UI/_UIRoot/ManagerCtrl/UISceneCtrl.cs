@@ -1,58 +1,42 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+/// <summary>
+/// ³¡¾°UIÀàĞÍ
+/// </summary>
+public enum SceneUIType
+{
+    LogOn,
+    City,
+}
+
 public class UISceneCtrl : Singleton<UISceneCtrl>
 {
 
     /// <summary>
-    /// åœºæ™¯ç±»å‹
-    /// </summary>
-    public enum SceneType
-    {
-        /// <summary>
-        /// ç™»å½•ç•Œé¢åœºæ™¯
-        /// </summary>
-        Logon,
-        /// <summary>
-        /// åŠ è½½åœºæ™¯
-        /// </summary>
-        Loading,
-        /// <summary>
-        /// ä¸»åŸåœºæ™¯
-        /// </summary>
-        MainCity,
-        /// <summary>
-        /// æˆ˜æ–—åœºæ™¯
-        /// </summary>
-        FightScene,
-
-    }
-
-    /// <summary>
-    /// å½“å‰åœºæ™¯å®¹å™¨
+    /// µ±Ç°³¡¾°ÈİÆ÷
     /// </summary>
     public UISceneViewBase currentSceneUI;
 
+
     /// <summary>
-    /// åŠ è½½åœºæ™¯
+    /// ¼ÓÔØ³¡¾°UI
     /// </summary>
-    public GameObject LoadScene(SceneType type)
+    /// <param name="type"></param>
+    public void LoadSceneUI(SceneUIType type)
     {
-        GameObject go = null;
+        GameObject sceneUI_Go = null;
         switch (type)
         {
-            case SceneType.Logon:
-                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "UIRoot_Login&Register", isCache: false);
-                currentSceneUI = go.GetComponentInChildren<UISceneLogOnView>();
+            case SceneUIType.LogOn:
+                sceneUI_Go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI , "UIRoot_Login&Register" , true);
                 break;
-            case SceneType.Loading:
-                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "RegisterWindow", isCache: false);
-                break;
-            case SceneType.MainCity:
-                go = ResourcesMgr.Instance.Load(ResourcesType.SceneUI, "ServerListWindow", isCache: false);
+            case SceneUIType.City:
                 break;
         }
-       
-        return go;
+
+        currentSceneUI = sceneUI_Go.GetComponent<UISceneViewBase>();
+
     }
 }

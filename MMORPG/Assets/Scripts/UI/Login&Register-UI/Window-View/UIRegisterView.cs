@@ -14,7 +14,7 @@ public class UIRegisterView : UIWindowViewBase
         get { return UIWindowCtrl.WindowType.Register; }
     }
 
-    public List<InputField> inputFields = new List<InputField>();//[HideInInspector]
+    [HideInInspector] public List<InputField> inputFields = new List<InputField>(); 
 
     public override void OnAwake()
     {
@@ -24,7 +24,7 @@ public class UIRegisterView : UIWindowViewBase
         for (int i = 0; i < temps.Length; i++)
         {
             //用户名 & 密码 & 重复密码
-            if (temps[i].name == "username-InputField" || temps[i].name == "password-InputField" || temps[i].name == "repassword-InputField")
+            if (temps[i].name == "input_Account" || temps[i].name == "input_Pwd" || temps[i].name == "input_RePwd")
             {
                 inputFields.Add(temps[i]);
             }

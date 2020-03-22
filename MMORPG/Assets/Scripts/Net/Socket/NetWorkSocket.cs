@@ -95,12 +95,12 @@ class NetWorkSocket:MonoBehaviour
             clientSocket.Connect(new IPEndPoint(IPAddress.Parse(GlobalInit.currentServer.ip), GlobalInit.currentServer.port));
             OnCheck_SendQueueEvent = OnCheckQueue;
 
+            //连接成功事件
+            OnConncetSuccess?.Invoke();
+
             //开启,消息接收!
             Thread t = new Thread(OnRecieveLisener);
             t.Start();
-
-            //连接成功事件
-            OnConncetSuccess?.Invoke();
         }
         catch (Exception e)
         {

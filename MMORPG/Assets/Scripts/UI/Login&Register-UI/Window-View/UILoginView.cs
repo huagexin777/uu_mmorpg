@@ -28,7 +28,7 @@ public class UILoginView : UIWindowViewBase
         for (int i = 0; i < temps.Length; i++)
         {
             //用户名 & 密码
-            if (temps[i].name == "username-InputField" || temps[i].name == "password-InputField")
+            if (temps[i].name == "input_Account" || temps[i].name == "input_Pwd")
             {
                 inputFields.Add(temps[i]);
             }

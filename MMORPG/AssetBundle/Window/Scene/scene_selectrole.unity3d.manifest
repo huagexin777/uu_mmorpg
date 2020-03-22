@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 663663736
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1e2f22f2894567fabcb8393e49a1f63c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 67f642e72d34706945b50420cecc3726
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 124
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 258
+  Script: {instanceID: 0}
+Assets:
+- Assets/Scene/SceneMap/Scene_SelectRole.unity
+Dependencies: []

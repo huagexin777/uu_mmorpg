@@ -33,7 +33,7 @@ namespace SocketNetWork
         #endregion
 
 
-        private List<Role> roleList;
+        private List<Role> roleList = new List<Role>();
         internal List<Role> RoleList { get => roleList; set => roleList = value; }
     }
 }

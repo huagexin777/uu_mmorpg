@@ -1,8 +1,12 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+/// <summary>
+/// åŒæ­¥åŠ è½½ 
+/// <para>AssetBundle</para>
+/// </summary>
 public class AssetBundleLoader : IDisposable
 {
     private AssetBundle bundle;
@@ -10,12 +14,12 @@ public class AssetBundleLoader : IDisposable
     public AssetBundleLoader(string path)
     {
         string fullPathName = LocalFileMgr.Instance.LocalFilePath + path;
-        //´ÓÄÚ´æÁ÷ÖĞ¼ÓÔØ
+        //ä»å†…å­˜æµä¸­åŠ è½½
         bundle = AssetBundle.LoadFromMemory(LocalFileMgr.Instance.GetBuffer(fullPathName));
     }
 
     /// <summary>
-    /// ¼ÓÔØ×ÊÔ´
+    /// åŠ è½½èµ„æº
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="t"></param>
@@ -28,22 +32,22 @@ public class AssetBundleLoader : IDisposable
 
 
     //--------------------------
-    //UnityÖĞµÄObjectºÍobjectµÄÇø±ğ
-    //¾Ù¸ö¼òµ¥µÄÀı×Ó£º
+    //Unityä¸­çš„Objectå’Œobjectçš„åŒºåˆ«
+    //ä¸¾ä¸ªç®€å•çš„ä¾‹å­ï¼š
     //  Debug.Log(gameObject is Object);
     //  Debug.Log(gameObject is object);
-    //  Ç°Õß·µ»Øtrue£¬ºóÕßÒ²·µ»Øtrue£»
+    //  å‰è€…è¿”å›trueï¼Œåè€…ä¹Ÿè¿”å›trueï¼›
     //  int num = 5;
     //  Debug.Log(num is Object);
     //  Debug.Log(num is object);
-    //  Ç°Õß·µ»Øfalse£¬ºóÕß·µ»Øtrue
+    //  å‰è€…è¿”å›falseï¼Œåè€…è¿”å›true
     //--------------------------
 
 
 
 
     /// <summary>
-    /// ×ÊÔ´ÊÍ·Å
+    /// èµ„æºé‡Šæ”¾
     /// </summary>
     public void Dispose()
     {

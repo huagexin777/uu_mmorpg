@@ -11,6 +11,7 @@ public class AssetBundleLoaderAsync : MonoBehaviour
     private string _fullName;
     private string _name;
 
+    //协程请求
     private AssetBundleCreateRequest _request;
     private AssetBundle _bundle;
 
@@ -30,16 +31,39 @@ public class AssetBundleLoaderAsync : MonoBehaviour
 
     IEnumerator Load()
     {
-        yield return new WaitForSeconds(0.5f);
+        #region WWW读取
+
+        //using (WWW www = new WWW(_fullName))
+        //{
+        //    yield return www;
+        //    _bundle = www.assetBundle;
+
+        //    if (OnLocalComplete != null)
+        //    {
+        //        OnLocalComplete(_bundle.LoadAllAssets(_name));
+        //        Destroy(this.gameObject);
+        //    }
+        //}
+
+        #endregion
+
+        #region 使用流读取
+
         //从内存中去[异步]读取
         _request = AssetBundle.LoadFromMemoryAsync(LocalFileMgr.Instance.GetBuffer(_fullName));
         yield return _request;
+
         _bundle = _request.assetBundle;
-        if (OnLocalComplete != null)
+
+        if (OnLocalComplete != null)//_bundle.isStreamedSceneAssetBundle
         {
             OnLocalComplete(_bundle.LoadAsset(_name));
             Destroy(this.gameObject);
         }
+
+        #endregion
+
+
     }
 
     //销毁后,再去Unload();

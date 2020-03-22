@@ -5,16 +5,26 @@ using UnityEngine;
 public class AssetBundleMgr : Singleton<AssetBundleMgr>
 {
 
-
-    void Start()
+    /// <summary>
+    /// 加载镜像
+    /// </summary>
+    public GameObject Load(string path , string name) 
     {
-        
+        using (AssetBundleLoader loader = new AssetBundleLoader(path))
+        {
+            return loader.LoadAsset<GameObject>(name);
+        }
     }
 
-
-    void Update()
+    /// <summary>
+    /// 加载克隆物体
+    /// </summary>
+    public GameObject Clone(string path,string name) 
     {
-
+        using (AssetBundleLoader loader = new AssetBundleLoader(path))
+        {
+            return GameObject.Instantiate(loader.LoadAsset<GameObject>(name));
+        }
     }
 
     /// <summary>

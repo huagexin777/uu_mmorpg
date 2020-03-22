@@ -90,22 +90,22 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         switch (type)
         {
             case WindowType.Login:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "LoginWindow", isCache:true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_LogOn", isCache:true);
                 break;
             case WindowType.Register:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_Reg", isCache: true);
                 break;
             case WindowType.RoleInfoList:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isCache: true);
                 break;
             case WindowType.Message:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "MessageWindow", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_Message", isCache: true);
                 break;
             case WindowType.GameServerEnter:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServerEnter", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_GameServerEnter", isCache: true);
                 break;
             case WindowType.GameServer:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServer", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_GameServerSelect", isCache: true);
                 break;
         }
 
@@ -152,22 +152,22 @@ public class UIWindowCtrl : Singleton<UIWindowCtrl>
         switch (type)
         {
             case WindowType.Login:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "LoginWindow", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_LogOn", isCache: true);
                 break;
             case WindowType.Register:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RegisterWindow", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_Reg", isCache: true);
                 break;
             case WindowType.RoleInfoList:
                 go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "RoleInfoList", isCache: true);
                 break;
             case WindowType.Message:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "MessageWindow", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_Message", isCache: true);
                 break;
             case WindowType.GameServerEnter:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServerEnter", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_GameServerEnter", isCache: true);
                 break;
             case WindowType.GameServer:
-                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "GameServer", isCache: true);
+                go = ResourcesMgr.Instance.Load(ResourcesType.WindowsUI, "pan_GameServerSelect", isCache: true);
                 break;
         }
 

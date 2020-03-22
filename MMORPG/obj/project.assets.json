@@ -2,33 +2,11 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.1": {
-      "Fody/6.0.0": {
-        "type": "package",
-        "build": {
-          "build/Fody.targets": {}
-        }
-      },
-      "ToString.Fody/1.11.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "6.0.0"
-        },
-        "compile": {
-          "lib/net452/ToString.dll": {}
-        },
-        "runtime": {
-          "lib/net452/ToString.dll": {}
-        },
-        "build": {
-          "build/ToString.Fody.props": {}
-        }
-      },
       "Assembly-CSharp/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
           "Assembly-CSharp-firstpass": "1.0.0",
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp.dll": {}
@@ -39,46 +17,32 @@
       },
       "Assembly-CSharp-firstpass/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
         },
         "runtime": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
+        }
+      },
+      "Substance.Platform/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Substance.Platform.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substance.Platform.dll": {}
         }
       }
     },
     ".NETFramework,Version=v4.7.1/win": {
-      "Fody/6.0.0": {
-        "type": "package",
-        "build": {
-          "build/Fody.targets": {}
-        }
-      },
-      "ToString.Fody/1.11.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "6.0.0"
-        },
-        "compile": {
-          "lib/net452/ToString.dll": {}
-        },
-        "runtime": {
-          "lib/net452/ToString.dll": {}
-        },
-        "build": {
-          "build/ToString.Fody.props": {}
-        }
-      },
       "Assembly-CSharp/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
           "Assembly-CSharp-firstpass": "1.0.0",
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp.dll": {}
@@ -89,46 +53,32 @@
       },
       "Assembly-CSharp-firstpass/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
         },
         "runtime": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
+        }
+      },
+      "Substance.Platform/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Substance.Platform.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substance.Platform.dll": {}
         }
       }
     },
     ".NETFramework,Version=v4.7.1/win-x64": {
-      "Fody/6.0.0": {
-        "type": "package",
-        "build": {
-          "build/Fody.targets": {}
-        }
-      },
-      "ToString.Fody/1.11.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "6.0.0"
-        },
-        "compile": {
-          "lib/net452/ToString.dll": {}
-        },
-        "runtime": {
-          "lib/net452/ToString.dll": {}
-        },
-        "build": {
-          "build/ToString.Fody.props": {}
-        }
-      },
       "Assembly-CSharp/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
           "Assembly-CSharp-firstpass": "1.0.0",
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp.dll": {}
@@ -139,46 +89,32 @@
       },
       "Assembly-CSharp-firstpass/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
         },
         "runtime": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
+        }
+      },
+      "Substance.Platform/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Substance.Platform.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substance.Platform.dll": {}
         }
       }
     },
     ".NETFramework,Version=v4.7.1/win-x86": {
-      "Fody/6.0.0": {
-        "type": "package",
-        "build": {
-          "build/Fody.targets": {}
-        }
-      },
-      "ToString.Fody/1.11.0": {
-        "type": "package",
-        "dependencies": {
-          "Fody": "6.0.0"
-        },
-        "compile": {
-          "lib/net452/ToString.dll": {}
-        },
-        "runtime": {
-          "lib/net452/ToString.dll": {}
-        },
-        "build": {
-          "build/ToString.Fody.props": {}
-        }
-      },
       "Assembly-CSharp/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
           "Assembly-CSharp-firstpass": "1.0.0",
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp.dll": {}
@@ -189,69 +125,28 @@
       },
       "Assembly-CSharp-firstpass/1.0.0": {
         "type": "project",
-        "framework": ".NETFramework,Version=v4.7.1",
         "dependencies": {
-          "ToString.Fody": "1.11.0"
+          "Substance.Platform": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
         },
         "runtime": {
           "bin/placeholder/Assembly-CSharp-firstpass.dll": {}
+        }
+      },
+      "Substance.Platform/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Substance.Platform.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Substance.Platform.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Fody/6.0.0": {
-      "sha512": "rH9Q7GapghyLYESfeCUOqh0S70eLc3FAikIgEEyGeng3JJf1M7mt2BUxjz93o3ipDXLrKn1s69AIEolmnVn8xg==",
-      "type": "package",
-      "path": "fody/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/Fody.targets",
-        "fody.6.0.0.nupkg.sha512",
-        "fody.nuspec",
-        "netclassictask/Fody.dll",
-        "netclassictask/FodyCommon.dll",
-        "netclassictask/FodyHelpers.dll",
-        "netclassictask/FodyIsolated.dll",
-        "netclassictask/Mono.Cecil.Pdb.dll",
-        "netclassictask/Mono.Cecil.Pdb.pdb",
-        "netclassictask/Mono.Cecil.Rocks.dll",
-        "netclassictask/Mono.Cecil.Rocks.pdb",
-        "netclassictask/Mono.Cecil.dll",
-        "netclassictask/Mono.Cecil.pdb",
-        "netstandardtask/Fody.dll",
-        "netstandardtask/FodyCommon.dll",
-        "netstandardtask/FodyHelpers.dll",
-        "netstandardtask/FodyIsolated.dll",
-        "netstandardtask/Mono.Cecil.Pdb.dll",
-        "netstandardtask/Mono.Cecil.Pdb.pdb",
-        "netstandardtask/Mono.Cecil.Rocks.dll",
-        "netstandardtask/Mono.Cecil.Rocks.pdb",
-        "netstandardtask/Mono.Cecil.dll",
-        "netstandardtask/Mono.Cecil.pdb"
-      ]
-    },
-    "ToString.Fody/1.11.0": {
-      "sha512": "XFeNfg41u2ra00gmCLlXXc123YHWO8GbautRxVzV6BXoNShk0ExQ6zLBxqRsDicpCk1Sh0jl3plgzcrzelAU3g==",
-      "type": "package",
-      "path": "tostring.fody/1.11.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/ToString.Fody.props",
-        "lib/net452/ToString.dll",
-        "lib/net452/ToString.xml",
-        "lib/netstandard1.4/ToString.dll",
-        "lib/netstandard1.4/ToString.xml",
-        "tostring.fody.1.11.0.nupkg.sha512",
-        "tostring.fody.nuspec",
-        "weaver/ToString.Fody.dll"
-      ]
-    },
     "Assembly-CSharp/1.0.0": {
       "type": "project",
       "path": "Assembly-CSharp.csproj",
@@ -261,13 +156,18 @@
       "type": "project",
       "path": "Assembly-CSharp-firstpass.csproj",
       "msbuildProject": "Assembly-CSharp-firstpass.csproj"
+    },
+    "Substance.Platform/1.0.0": {
+      "type": "project",
+      "path": "Substance.Platform.csproj",
+      "msbuildProject": "Substance.Platform.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.1": [
       "Assembly-CSharp >= 1.0.0",
       "Assembly-CSharp-firstpass >= 1.0.0",
-      "ToString.Fody >= 1.11.0"
+      "Substance.Platform >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -302,20 +202,16 @@
             },
             "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj": {
               "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Assembly-CSharp.csproj"
+            },
+            "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Substance.Platform.csproj": {
+              "projectPath": "E:\\Unity3D\\Program\\uu_mmorpg\\MMORPG\\Substance.Platform.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net471": {
-        "dependencies": {
-          "ToString.Fody": {
-            "target": "Package",
-            "version": "[1.11.0, )"
-          }
-        }
-      }
+      "net471": {}
     },
     "runtimes": {
       "win": {

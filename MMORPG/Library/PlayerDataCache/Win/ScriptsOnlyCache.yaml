@@ -1,0 +1,57 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - AssetBundleWindow
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
+  sceneClasses:
+    Assets/Scene/SceneMap/Scene_SelectRole.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+  scriptHashData: []
+  platform: 5
+  scenePathNames:
+  - Assets/Scene/SceneMap/Scene_SelectRole.unity
+  playerPath: E:/Unity3D/Program/uu_mmorpg/MMORPG/Assets/../AssetBundle/Window/Scene/scene_selectrole.unity3d

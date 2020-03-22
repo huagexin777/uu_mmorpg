@@ -1,10 +1,10 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using System.Xml.Linq;
 using UnityEngine;
 
 /// <summary>
-/// 打包XML集合
+/// 鎵撳寘XML闆嗗悎
 /// </summary>
 public class AssetBundleDAL
 {

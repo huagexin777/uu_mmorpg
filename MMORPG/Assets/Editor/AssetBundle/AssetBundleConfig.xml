@@ -4,8 +4,8 @@
     <Item Name="Role_Main_Player" Tag="Role" Version="1" Size="0" ToPath="/Role/">
       <Path Value="Resources/Prefab/Role/Role_Main_Player.prefab"/>
     </Item>
-    <Item Name="GameScene_CunZhuang" Tag="Scene" Version="1" Size="0" ToPath="/Scene/">
-      <Path Value="Scene/MainCity_copy.unity"/>
+    <Item Name="Scene_SelectRole" Tag="Scene" Version="1" Size="0" ToPath="/Scene/">
+      <Path Value="Scene/SceneMap/Scene_SelectRole.unity"/>
     </Item>  
   </AssetBundle>
 </Root>

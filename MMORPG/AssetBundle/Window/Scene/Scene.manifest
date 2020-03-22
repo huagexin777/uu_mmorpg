@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2962139387
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene_selectrole.unity3d
+      Dependencies: {}

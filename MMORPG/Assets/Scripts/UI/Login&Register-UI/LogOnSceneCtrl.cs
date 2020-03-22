@@ -12,7 +12,9 @@ public class LogOnSceneCtrl : MonoBehaviour
     
     void Awake()
     {
-        UISceneCtrl.Instance.LoadScene(UISceneCtrl.SceneType.Logon);
+         
+
+        UISceneCtrl.Instance.LoadSceneUI(SceneUIType.LogOn);
 
         ////测试
         //List<JobEntity> jobEntities = JobDBModel.Instance.GetEntityList();

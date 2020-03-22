@@ -34,19 +34,19 @@ public class UIGameServerView : UIWindowViewBase
 
         for (int i = 0; i < allTransList.Count; i++)
         {
-            if (allTransList[i].name == "Content-Page")
+            if (allTransList[i].name == "GameServerPageGrid")
             {
                 content_page = allTransList[i];
             }
-            else if (allTransList[i].name == "Content-List")
+            else if (allTransList[i].name == "GameServerGrid")
             {
                 content_list = allTransList[i];
             }
-            else if (allTransList[i].name == "selectingTxt")
+            else if (allTransList[i].name == "lblServerName")
             {
                 selectingTxt = allTransList[i].GetComponent<Text>();
             }
-            else if (allTransList[i].name == "selectingPoint")
+            else if (allTransList[i].name == "imgServerStatus")
             {
                 selectingPoint = allTransList[i].GetComponent<Image>();
             }

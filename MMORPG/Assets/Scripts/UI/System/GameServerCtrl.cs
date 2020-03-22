@@ -61,8 +61,8 @@ public class GameServerCtrl : SystemCtrlBase<GameServerCtrl>
     void OnGoToBtn(object[] p)
     {
         //建立连接
-        NetWorkSocket.Instance.Connect();
         NetWorkSocket.Instance.OnConncetSuccess += OnConncetSuccessCallBack;
+        NetWorkSocket.Instance.Connect();
     }
 
     /// <summary>
@@ -70,8 +70,9 @@ public class GameServerCtrl : SystemCtrlBase<GameServerCtrl>
     /// </summary>
     void OnConncetSuccessCallBack() 
     {
+        Debug.LogError("连接socket成功!");
         //加载场景
-        SceneManagerCtrl.Instance.Load(SceneType.RoleSelect);
+        SceneMgr.Instance.LoadingScene(SceneType.SelectRole);
     }
 
 

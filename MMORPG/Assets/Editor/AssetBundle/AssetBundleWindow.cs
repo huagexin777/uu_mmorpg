@@ -119,6 +119,7 @@ public class AssetBundleWindow : EditorWindow
 
         #endregion
 
+
         #region 内容行
         GUILayout.BeginVertical();
 
@@ -301,7 +302,6 @@ public class AssetBundleWindow : EditorWindow
         {
             System.IO.Directory.CreateDirectory(toPath);
         }
-
         BuildPipeline.BuildAssetBundles(toPath, arrBuild, BuildAssetBundleOptions.None, target);
     }
 

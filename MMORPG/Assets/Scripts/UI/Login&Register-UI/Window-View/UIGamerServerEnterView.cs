@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class UIGamerServerEnterView : UIWindowViewBase
 {
 
@@ -19,7 +20,7 @@ public class UIGamerServerEnterView : UIWindowViewBase
         }
     }
 
-
+    
     private Text serverName;
 
 
@@ -31,7 +32,7 @@ public class UIGamerServerEnterView : UIWindowViewBase
 
         for (int i = 0; i < allTransList.Count; i++)
         {
-            if (allTransList[i].name == "serverName")
+            if (allTransList[i].name == "lblDefaultGameServer")
             {
                 serverName = allTransList[i].GetComponent<Text>();
             }
@@ -52,11 +53,11 @@ public class UIGamerServerEnterView : UIWindowViewBase
     {
         base.OnBtnClick(go);
 
-        if (go.name == "gotoGameServerList")//前往（进入角色选择界面）
+        if (go.name == "btnEnterGame")//前往（进入角色选择）
         {
             UIDispatcher.Instance.Dispatcher(ConstDefine.UIGameServerEnterView_GoToBtn);
         }
-        else if (go.name == "switchZoneBtn")//换区
+        else if (go.name == "btnSelectGameServer")//换区
         {
             UIDispatcher.Instance.Dispatcher(ConstDefine.UIGameServerEnterView_SwitchZoneBtn);
         }

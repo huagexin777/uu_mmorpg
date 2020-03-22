@@ -21,7 +21,7 @@ public class UIMessageView : UIWindowViewBase
         Text[] texts = GetComponentsInChildren<Text>(true);
         for (int i = 0; i < texts.Length; i++)
         {
-            if (texts[i].name == "Content")
+            if (texts[i].name == "lblMessage")
             {
                 content = texts[i];
             }
@@ -41,7 +41,7 @@ public class UIMessageView : UIWindowViewBase
     {
         base.OnBtnClick(go);
 
-        if (go.name == "ensureBtn")
+        if (go.name == "lblMessage")
         {
             UIDispatcher.Instance.Dispatcher(ConstDefine.UIMessageView_EnsureBtn);
         }
